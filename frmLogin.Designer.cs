@@ -55,7 +55,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.label6.Location = new System.Drawing.Point(87, 440);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 23);
+            this.label6.Size = new System.Drawing.Size(163, 30);
             this.label6.TabIndex = 25;
             this.label6.Text = "Create Account";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -67,7 +67,7 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Location = new System.Drawing.Point(60, 417);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 23);
+            this.label5.Size = new System.Drawing.Size(235, 30);
             this.label5.TabIndex = 24;
             this.label5.Text = "Dont Have an Account";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +103,7 @@
             this.checkbxShowPas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.checkbxShowPas.Location = new System.Drawing.Point(106, 279);
             this.checkbxShowPas.Name = "checkbxShowPas";
-            this.checkbxShowPas.Size = new System.Drawing.Size(152, 27);
+            this.checkbxShowPas.Size = new System.Drawing.Size(188, 34);
             this.checkbxShowPas.TabIndex = 21;
             this.checkbxShowPas.Text = "Show Password";
             this.checkbxShowPas.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(36, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 23);
+            this.label3.Size = new System.Drawing.Size(105, 30);
             this.label3.TabIndex = 17;
             this.label3.Text = "Password";
             // 
@@ -156,7 +156,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(36, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 23);
+            this.label2.Size = new System.Drawing.Size(110, 30);
             this.label2.TabIndex = 15;
             this.label2.Text = "Username";
             // 
@@ -175,9 +175,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(270, 1);
+            this.label8.Location = new System.Drawing.Point(270, -6);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(21, 23);
+            this.label8.Size = new System.Drawing.Size(27, 30);
             this.label8.TabIndex = 26;
             this.label8.Text = "X";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -204,7 +204,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(68, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 43);
+            this.label7.Size = new System.Drawing.Size(230, 52);
             this.label7.TabIndex = 15;
             this.label7.Text = "BAYONG";
             // 
@@ -215,13 +215,13 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.label1.Location = new System.Drawing.Point(23, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 33);
+            this.label1.Size = new System.Drawing.Size(226, 40);
             this.label1.TabIndex = 13;
             this.label1.Text = "Get Started";
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(289, 489);
@@ -240,6 +240,7 @@
             this.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

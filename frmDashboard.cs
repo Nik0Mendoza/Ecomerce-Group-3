@@ -31,5 +31,100 @@ namespace EcomGr3
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlDiscover_MouseEnter(object sender, EventArgs e)
+        {
+        }
+
+        private void panel2_MouseEnter(object sender, EventArgs e)
+        {
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_MouseEnter(object sender, EventArgs e)
+        {
+        }
+
+        private void panel4_MouseClick(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void panel3_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                frmLogin login = new frmLogin();
+                login.Show();
+            }
+            else
+            {
+                // User clicked "No" or closed the message box, do nothing
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                frmLogin login = new frmLogin();
+                login.Show();
+            }
+            else
+            {
+                // User clicked "No" or closed the message box, do nothing
+            }
+        }
     }
 }
