@@ -10,39 +10,11 @@ using System.Windows.Forms;
 
 namespace EcomGr3
 {
-    public partial class frmAcc : Form
+    public partial class frmCart : Form
     {
-        public frmAcc()
+        public frmCart()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmDiscover discover = new frmDiscover();
-            discover.Show();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmDiscover discover = new frmDiscover();
-            discover.Show();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmCart cart = new frmCart();
-            cart.Show();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmCart cart = new frmCart();
-            cart.Show();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -50,6 +22,13 @@ namespace EcomGr3
             this.Hide();
             frmDashboard dashboard = new frmDashboard();
             dashboard.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDiscover discover = new frmDiscover();
+            discover.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -65,6 +44,27 @@ namespace EcomGr3
             {
                 // User clicked "No" or closed the message box, do nothing
             }
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAcc acc = new frmAcc();
+            acc.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDiscover discover = new frmDiscover();
+            discover.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAcc acc = new frmAcc();
+            acc.Show();
         }
     }
 }

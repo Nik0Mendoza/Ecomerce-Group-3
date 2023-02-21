@@ -94,7 +94,9 @@ namespace EcomGr3
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmCart cart = new frmCart();
+            cart.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -125,6 +127,41 @@ namespace EcomGr3
             {
                 // User clicked "No" or closed the message box, do nothing
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDiscover discover = new frmDiscover();
+            discover.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCart cart = new frmCart();
+            cart.Show();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAcc acc = new frmAcc();
+            acc.Show();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDiscover discover = new frmDiscover();
+            discover.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAcc acc = new frmAcc();
+            acc.Show();
         }
     }
 }
