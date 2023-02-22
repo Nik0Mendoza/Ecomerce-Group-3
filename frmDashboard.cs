@@ -163,5 +163,17 @@ namespace EcomGr3
             frmAcc acc = new frmAcc();
             acc.Show();
         }
+
+        private void btnShopNow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDiscover discover = new frmDiscover();
+            discover.Show();
+        }
+
+        private void Discover_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
