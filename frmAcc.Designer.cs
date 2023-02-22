@@ -45,6 +45,22 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbMonth = new System.Windows.Forms.ComboBox();
+            this.cmbDay = new System.Windows.Forms.ComboBox();
+            this.cmbYear = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -254,11 +270,184 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(311, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(289, 38);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Manage My Account";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(319, 190);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(227, 28);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Full Name (FN, MI, LN)";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(324, 221);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(263, 40);
+            this.txtName.TabIndex = 28;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(319, 282);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(145, 28);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Email Address";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(324, 313);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(263, 40);
+            this.txtEmail.TabIndex = 30;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(654, 190);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(94, 28);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Birthday";
+            // 
+            // cmbMonth
+            // 
+            this.cmbMonth.FormattingEnabled = true;
+            this.cmbMonth.Location = new System.Drawing.Point(659, 227);
+            this.cmbMonth.Name = "cmbMonth";
+            this.cmbMonth.Size = new System.Drawing.Size(100, 24);
+            this.cmbMonth.TabIndex = 32;
+            this.cmbMonth.Text = "Month";
+            // 
+            // cmbDay
+            // 
+            this.cmbDay.FormattingEnabled = true;
+            this.cmbDay.Location = new System.Drawing.Point(759, 227);
+            this.cmbDay.Name = "cmbDay";
+            this.cmbDay.Size = new System.Drawing.Size(59, 24);
+            this.cmbDay.TabIndex = 33;
+            this.cmbDay.Text = "Day";
+            // 
+            // cmbYear
+            // 
+            this.cmbYear.FormattingEnabled = true;
+            this.cmbYear.Location = new System.Drawing.Point(814, 227);
+            this.cmbYear.Name = "cmbYear";
+            this.cmbYear.Size = new System.Drawing.Size(70, 24);
+            this.cmbYear.TabIndex = 34;
+            this.cmbYear.Text = "Year";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(654, 282);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(113, 28);
+            this.label13.TabIndex = 35;
+            this.label13.Text = "Mobile no.";
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobile.Location = new System.Drawing.Point(659, 313);
+            this.txtMobile.Multiline = true;
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(263, 40);
+            this.txtMobile.TabIndex = 36;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(1001, 190);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 28);
+            this.label14.TabIndex = 37;
+            this.label14.Text = "Gender";
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Location = new System.Drawing.Point(1006, 224);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(67, 24);
+            this.cmbGender.TabIndex = 38;
+            this.cmbGender.Text = "Select";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(319, 386);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(87, 28);
+            this.label15.TabIndex = 39;
+            this.label15.Text = "Address";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(324, 417);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(1067, 40);
+            this.txtAddress.TabIndex = 40;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(324, 514);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(282, 56);
+            this.btnSave.TabIndex = 41;
+            this.btnSave.Text = "Save Changes";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // frmAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 750);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.cmbGender);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.txtMobile);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.cmbYear);
+            this.Controls.Add(this.cmbDay);
+            this.Controls.Add(this.cmbMonth);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -276,6 +465,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -297,5 +487,21 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbMonth;
+        private System.Windows.Forms.ComboBox cmbDay;
+        private System.Windows.Forms.ComboBox cmbYear;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtMobile;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Button btnSave;
     }
 }

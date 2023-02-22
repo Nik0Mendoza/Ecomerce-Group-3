@@ -66,5 +66,15 @@ namespace EcomGr3
                 // User clicked "No" or closed the message box, do nothing
             }
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("All changes are saved.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

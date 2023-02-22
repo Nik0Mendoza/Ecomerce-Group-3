@@ -45,6 +45,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnCheckout = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtVouch = new System.Windows.Forms.TextBox();
+            this.btnApply = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtLocation = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtSubT = new System.Windows.Forms.TextBox();
+            this.txtSf = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -53,6 +68,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -245,7 +262,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(274, 2);
+            this.pictureBox7.Location = new System.Drawing.Point(271, 0);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(140, 69);
@@ -254,11 +271,193 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
+            // btnCheckout
+            // 
+            this.btnCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.btnCheckout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCheckout.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckout.ForeColor = System.Drawing.Color.White;
+            this.btnCheckout.Location = new System.Drawing.Point(21, 444);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(353, 56);
+            this.btnCheckout.TabIndex = 19;
+            this.btnCheckout.Text = "PROCEED TO CHECKOUT";
+            this.btnCheckout.UseVisualStyleBackColor = false;
+            this.btnCheckout.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.txtSf);
+            this.panel2.Controls.Add(this.txtSubT);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.txtLocation);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.txtTotal);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.btnApply);
+            this.panel2.Controls.Add(this.txtVouch);
+            this.panel2.Controls.Add(this.btnCheckout);
+            this.panel2.Location = new System.Drawing.Point(1155, 186);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(390, 537);
+            this.panel2.TabIndex = 20;
+            // 
+            // txtVouch
+            // 
+            this.txtVouch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtVouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVouch.Location = new System.Drawing.Point(26, 333);
+            this.txtVouch.Multiline = true;
+            this.txtVouch.Name = "txtVouch";
+            this.txtVouch.Size = new System.Drawing.Size(231, 30);
+            this.txtVouch.TabIndex = 20;
+            // 
+            // btnApply
+            // 
+            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.btnApply.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnApply.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApply.ForeColor = System.Drawing.Color.White;
+            this.btnApply.Location = new System.Drawing.Point(260, 325);
+            this.btnApply.Name = "btnApply";
+            this.btnApply.Size = new System.Drawing.Size(111, 40);
+            this.btnApply.TabIndex = 21;
+            this.btnApply.Text = "Apply";
+            this.btnApply.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(19, 169);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(227, 38);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Order Summary";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(20, 390);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(108, 31);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Sub Total";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(292, 214);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(857, 509);
+            this.dataGridView2.TabIndex = 21;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(282, 142);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(112, 60);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Cart";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.BackColor = System.Drawing.Color.White;
+            this.txtTotal.Enabled = false;
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(134, 392);
+            this.txtTotal.Multiline = true;
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(237, 30);
+            this.txtTotal.TabIndex = 24;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(19, 26);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(129, 38);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Location";
+            // 
+            // txtLocation
+            // 
+            this.txtLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtLocation.Enabled = false;
+            this.txtLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocation.Location = new System.Drawing.Point(29, 75);
+            this.txtLocation.Multiline = true;
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.ReadOnly = true;
+            this.txtLocation.Size = new System.Drawing.Size(345, 68);
+            this.txtLocation.TabIndex = 26;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(23, 225);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(100, 31);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Subtotal";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(23, 269);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(147, 31);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Shipping Fee";
+            // 
+            // txtSubT
+            // 
+            this.txtSubT.BackColor = System.Drawing.Color.White;
+            this.txtSubT.Enabled = false;
+            this.txtSubT.Location = new System.Drawing.Point(190, 225);
+            this.txtSubT.Multiline = true;
+            this.txtSubT.Name = "txtSubT";
+            this.txtSubT.ReadOnly = true;
+            this.txtSubT.Size = new System.Drawing.Size(183, 30);
+            this.txtSubT.TabIndex = 29;
+            this.txtSubT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtSf
+            // 
+            this.txtSf.BackColor = System.Drawing.Color.White;
+            this.txtSf.Enabled = false;
+            this.txtSf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSf.Location = new System.Drawing.Point(190, 269);
+            this.txtSf.Multiline = true;
+            this.txtSf.Name = "txtSf";
+            this.txtSf.ReadOnly = true;
+            this.txtSf.Size = new System.Drawing.Size(184, 30);
+            this.txtSf.TabIndex = 30;
+            this.txtSf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // frmCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1600, 750);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -276,7 +475,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -298,5 +501,20 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button btnCheckout;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnApply;
+        private System.Windows.Forms.TextBox txtVouch;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtSf;
+        private System.Windows.Forms.TextBox txtSubT;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtLocation;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtTotal;
     }
 }

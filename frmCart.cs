@@ -66,5 +66,12 @@ namespace EcomGr3
             frmAcc acc = new frmAcc();
             acc.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCheckout checkout = new frmCheckout();
+            checkout.Show();
+        }
     }
 }
