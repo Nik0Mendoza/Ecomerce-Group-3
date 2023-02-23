@@ -50,15 +50,11 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cmbMonth = new System.Windows.Forms.ComboBox();
-            this.cmbDay = new System.Windows.Forms.ComboBox();
-            this.cmbYear = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtMobile = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtMobile = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -325,85 +321,25 @@
             this.txtEmail.Size = new System.Drawing.Size(295, 49);
             this.txtEmail.TabIndex = 30;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(736, 238);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 32);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Birthday";
-            // 
-            // cmbMonth
-            // 
-            this.cmbMonth.FormattingEnabled = true;
-            this.cmbMonth.Location = new System.Drawing.Point(741, 284);
-            this.cmbMonth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cmbMonth.Name = "cmbMonth";
-            this.cmbMonth.Size = new System.Drawing.Size(112, 28);
-            this.cmbMonth.TabIndex = 32;
-            this.cmbMonth.Text = "Month";
-            // 
-            // cmbDay
-            // 
-            this.cmbDay.FormattingEnabled = true;
-            this.cmbDay.Location = new System.Drawing.Point(854, 284);
-            this.cmbDay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cmbDay.Name = "cmbDay";
-            this.cmbDay.Size = new System.Drawing.Size(66, 28);
-            this.cmbDay.TabIndex = 33;
-            this.cmbDay.Text = "Day";
-            // 
-            // cmbYear
-            // 
-            this.cmbYear.FormattingEnabled = true;
-            this.cmbYear.Location = new System.Drawing.Point(916, 284);
-            this.cmbYear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cmbYear.Name = "cmbYear";
-            this.cmbYear.Size = new System.Drawing.Size(78, 28);
-            this.cmbYear.TabIndex = 34;
-            this.cmbYear.Text = "Year";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(736, 352);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(138, 32);
+            this.label13.Size = new System.Drawing.Size(122, 32);
             this.label13.TabIndex = 35;
-            this.label13.Text = "Mobile no.";
+            this.label13.Text = "Password";
             // 
-            // txtMobile
+            // txtPass
             // 
-            this.txtMobile.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile.Location = new System.Drawing.Point(741, 391);
-            this.txtMobile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtMobile.Multiline = true;
-            this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(295, 49);
-            this.txtMobile.TabIndex = 36;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1126, 238);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 32);
-            this.label14.TabIndex = 37;
-            this.label14.Text = "Gender";
-            // 
-            // cmbGender
-            // 
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Location = new System.Drawing.Point(1132, 280);
-            this.cmbGender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(75, 28);
-            this.cmbGender.TabIndex = 38;
-            this.cmbGender.Text = "Select";
+            this.txtPass.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(741, 391);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(295, 49);
+            this.txtPass.TabIndex = 36;
             // 
             // btnSave
             // 
@@ -420,20 +356,37 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(736, 238);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(191, 32);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Mobile number";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobile.Location = new System.Drawing.Point(742, 276);
+            this.txtMobile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMobile.Multiline = true;
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(295, 49);
+            this.txtMobile.TabIndex = 43;
+            // 
             // frmAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1800, 938);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.cmbGender);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.txtMobile);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.cmbYear);
-            this.Controls.Add(this.cmbDay);
-            this.Controls.Add(this.cmbMonth);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtName);
@@ -484,14 +437,10 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox cmbMonth;
-        private System.Windows.Forms.ComboBox cmbDay;
-        private System.Windows.Forms.ComboBox cmbYear;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtMobile;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtMobile;
     }
 }

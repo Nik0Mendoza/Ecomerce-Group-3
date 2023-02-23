@@ -76,5 +76,10 @@ namespace EcomGr3
         {
             MessageBox.Show("All changes are saved.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
