@@ -73,7 +73,42 @@ namespace EcomGr3
         {
             txtUsername.Clear();
             txtPassword.Clear();
-            txtConPassword.Clear();
+            txtMobileNumber.Clear();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkbxShowPas_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLastName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

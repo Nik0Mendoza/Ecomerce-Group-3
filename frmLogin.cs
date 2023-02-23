@@ -54,7 +54,7 @@ namespace EcomGr3
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtUsername.Clear();
+            txtEmail.Clear();
             txtPassword.Clear();
         }
 
@@ -63,6 +63,16 @@ namespace EcomGr3
             this.Hide();
             frmAdminLog AdminLog = new frmAdminLog();
             AdminLog.Show();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
