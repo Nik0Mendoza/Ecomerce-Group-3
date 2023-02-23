@@ -52,6 +52,18 @@
     <Compile Include="frmAcc.Designer.cs">
       <DependentUpon>frmAcc.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminLog.Designer.cs">
+      <DependentUpon>frmAdminLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="frmCheckout.Designer.cs">
       <DependentUpon>frmCheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCod.Designer.cs">
+      <DependentUpon>frmCod.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
@@ -76,6 +94,54 @@
     <Compile Include="frmDiscover.Designer.cs">
       <DependentUpon>frmDiscover.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFree.Designer.cs">
+      <DependentUpon>frmFree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenshin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenshin.Designer.cs">
+      <DependentUpon>frmGenshin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIden.Designer.cs">
+      <DependentUpon>frmIden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLife.Designer.cs">
+      <DependentUpon>frmLife.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLol.Designer.cs">
+      <DependentUpon>frmLol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmML.Designer.cs">
+      <DependentUpon>frmML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMOrig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMOrig.Designer.cs">
+      <DependentUpon>frmMOrig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPubg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPubg.Designer.cs">
+      <DependentUpon>frmPubg.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +154,24 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSteam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSteam.Designer.cs">
+      <DependentUpon>frmSteam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValo.Designer.cs">
+      <DependentUpon>frmValo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWild.Designer.cs">
+      <DependentUpon>frmWild.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="splash.cs">
@@ -99,11 +183,20 @@
     <EmbeddedResource Include="frmAcc.resx">
       <DependentUpon>frmAcc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminLog.resx">
+      <DependentUpon>frmAdminLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCart.resx">
       <DependentUpon>frmCart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCheckout.resx">
       <DependentUpon>frmCheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCod.resx">
+      <DependentUpon>frmCod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
@@ -111,11 +204,44 @@
     <EmbeddedResource Include="frmDiscover.resx">
       <DependentUpon>frmDiscover.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFree.resx">
+      <DependentUpon>frmFree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenshin.resx">
+      <DependentUpon>frmGenshin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIden.resx">
+      <DependentUpon>frmIden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLife.resx">
+      <DependentUpon>frmLife.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLol.resx">
+      <DependentUpon>frmLol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmML.resx">
+      <DependentUpon>frmML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMOrig.resx">
+      <DependentUpon>frmMOrig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPubg.resx">
+      <DependentUpon>frmPubg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSteam.resx">
+      <DependentUpon>frmSteam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValo.resx">
+      <DependentUpon>frmValo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWild.resx">
+      <DependentUpon>frmWild.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

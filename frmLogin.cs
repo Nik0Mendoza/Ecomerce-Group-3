@@ -57,5 +57,12 @@ namespace EcomGr3
             txtUsername.Clear();
             txtPassword.Clear();
         }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAdminLog AdminLog = new frmAdminLog();
+            AdminLog.Show();
+        }
     }
 }

@@ -32,7 +32,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
             this.checkbxShowPas = new System.Windows.Forms.CheckBox();
             this.textConPassword = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -41,9 +41,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.label6.Location = new System.Drawing.Point(87, 440);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 23);
+            this.label6.Size = new System.Drawing.Size(163, 30);
             this.label6.TabIndex = 25;
             this.label6.Text = "Create Account";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -67,7 +68,7 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Location = new System.Drawing.Point(60, 417);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 23);
+            this.label5.Size = new System.Drawing.Size(235, 30);
             this.label5.TabIndex = 24;
             this.label5.Text = "Dont Have an Account";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,26 +85,26 @@
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // btnRegister
+            // btnLog
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(36, 327);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(216, 35);
-            this.btnRegister.TabIndex = 22;
-            this.btnRegister.Text = "LOGIN";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.btnLog.ForeColor = System.Drawing.Color.White;
+            this.btnLog.Location = new System.Drawing.Point(36, 327);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(216, 35);
+            this.btnLog.TabIndex = 22;
+            this.btnLog.Text = "LOGIN";
+            this.btnLog.UseVisualStyleBackColor = false;
+            this.btnLog.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // checkbxShowPas
             // 
             this.checkbxShowPas.AutoSize = true;
             this.checkbxShowPas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkbxShowPas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkbxShowPas.Location = new System.Drawing.Point(106, 279);
+            this.checkbxShowPas.Location = new System.Drawing.Point(125, 279);
             this.checkbxShowPas.Name = "checkbxShowPas";
-            this.checkbxShowPas.Size = new System.Drawing.Size(152, 27);
+            this.checkbxShowPas.Size = new System.Drawing.Size(188, 34);
             this.checkbxShowPas.TabIndex = 21;
             this.checkbxShowPas.Text = "Show Password";
             this.checkbxShowPas.UseVisualStyleBackColor = true;
@@ -125,7 +126,7 @@
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(40, 236);
+            this.txtPassword.Location = new System.Drawing.Point(40, 245);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(216, 28);
@@ -134,9 +135,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 211);
+            this.label3.Location = new System.Drawing.Point(36, 216);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 23);
+            this.label3.Size = new System.Drawing.Size(105, 30);
             this.label3.TabIndex = 17;
             this.label3.Text = "Password";
             // 
@@ -145,7 +146,7 @@
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(41, 168);
+            this.txtUsername.Location = new System.Drawing.Point(41, 183);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(216, 28);
@@ -154,9 +155,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 143);
+            this.label2.Location = new System.Drawing.Point(36, 152);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 23);
+            this.label2.Size = new System.Drawing.Size(110, 30);
             this.label2.TabIndex = 15;
             this.label2.Text = "Username";
             // 
@@ -174,14 +175,50 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(270, 3);
+            this.label8.Location = new System.Drawing.Point(268, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(21, 23);
+            this.label8.Size = new System.Drawing.Size(27, 30);
             this.label8.TabIndex = 26;
             this.label8.Text = "X";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(68, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(230, 52);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "BAYONG";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.label1.Location = new System.Drawing.Point(23, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(226, 40);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Get Started";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.label4.Location = new System.Drawing.Point(196, 131);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 32);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Admin?";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // pictureBox1
             // 
@@ -197,38 +234,17 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(68, 8);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 43);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "BAYONG";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.label1.Location = new System.Drawing.Point(23, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 33);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Get Started";
-            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(289, 489);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnLog);
             this.Controls.Add(this.checkbxShowPas);
             this.Controls.Add(this.textConPassword);
             this.Controls.Add(this.txtPassword);
@@ -259,7 +275,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnLog;
         private System.Windows.Forms.CheckBox checkbxShowPas;
         private System.Windows.Forms.TextBox textConPassword;
         private System.Windows.Forms.TextBox txtPassword;
@@ -268,8 +284,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
