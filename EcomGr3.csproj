@@ -85,6 +85,12 @@
     <Compile Include="frmCod.Designer.cs">
       <DependentUpon>frmCod.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCodAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodAdmin.Designer.cs">
+      <DependentUpon>frmCodAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +109,23 @@
     <Compile Include="frmFree.Designer.cs">
       <DependentUpon>frmFree.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFreeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreeAdmin.Designer.cs">
+      <DependentUpon>frmFreeAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGenshin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGenshin.Designer.cs">
       <DependentUpon>frmGenshin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenshinAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenshinAdmin.Designer.cs">
+      <DependentUpon>frmGenshinAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmIden.cs">
       <SubType>Form</SubType>
@@ -115,11 +133,23 @@
     <Compile Include="frmIden.Designer.cs">
       <DependentUpon>frmIden.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmIdenAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIdenAdmin.Designer.cs">
+      <DependentUpon>frmIdenAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLife.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLife.Designer.cs">
       <DependentUpon>frmLife.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLifeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLifeAdmin.Designer.cs">
+      <DependentUpon>frmLifeAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLol.cs">
       <SubType>Form</SubType>
@@ -127,11 +157,23 @@
     <Compile Include="frmLol.Designer.cs">
       <DependentUpon>frmLol.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLoLAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoLAdmin.Designer.cs">
+      <DependentUpon>frmLoLAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmML.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmML.Designer.cs">
       <DependentUpon>frmML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMLAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMLAdmin.Designer.cs">
+      <DependentUpon>frmMLAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMOrig.cs">
       <SubType>Form</SubType>
@@ -139,11 +181,23 @@
     <Compile Include="frmMOrig.Designer.cs">
       <DependentUpon>frmMOrig.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMOrigAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMOrigAdmin.Designer.cs">
+      <DependentUpon>frmMOrigAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPubg.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPubg.Designer.cs">
       <DependentUpon>frmPubg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPubgAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPubgAdmin.Designer.cs">
+      <DependentUpon>frmPubgAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
@@ -163,17 +217,35 @@
     <Compile Include="frmSteam.Designer.cs">
       <DependentUpon>frmSteam.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSteamAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSteamAdmin.Designer.cs">
+      <DependentUpon>frmSteamAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmValo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmValo.Designer.cs">
       <DependentUpon>frmValo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmValoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValoAdmin.Designer.cs">
+      <DependentUpon>frmValoAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmWild.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmWild.Designer.cs">
       <DependentUpon>frmWild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWildAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWildAdmin.Designer.cs">
+      <DependentUpon>frmWildAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -201,6 +273,9 @@
     <EmbeddedResource Include="frmCod.resx">
       <DependentUpon>frmCod.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCodAdmin.resx">
+      <DependentUpon>frmCodAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,14 +285,26 @@
     <EmbeddedResource Include="frmFree.resx">
       <DependentUpon>frmFree.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFreeAdmin.resx">
+      <DependentUpon>frmFreeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGenshin.resx">
       <DependentUpon>frmGenshin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenshinAdmin.resx">
+      <DependentUpon>frmGenshinAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIden.resx">
       <DependentUpon>frmIden.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmIdenAdmin.resx">
+      <DependentUpon>frmIdenAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLife.resx">
       <DependentUpon>frmLife.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLifeAdmin.resx">
+      <DependentUpon>frmLifeAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -225,14 +312,26 @@
     <EmbeddedResource Include="frmLol.resx">
       <DependentUpon>frmLol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLoLAdmin.resx">
+      <DependentUpon>frmLoLAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmML.resx">
       <DependentUpon>frmML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMLAdmin.resx">
+      <DependentUpon>frmMLAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMOrig.resx">
       <DependentUpon>frmMOrig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMOrigAdmin.resx">
+      <DependentUpon>frmMOrigAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPubg.resx">
       <DependentUpon>frmPubg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPubgAdmin.resx">
+      <DependentUpon>frmPubgAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
@@ -240,11 +339,20 @@
     <EmbeddedResource Include="frmSteam.resx">
       <DependentUpon>frmSteam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSteamAdmin.resx">
+      <DependentUpon>frmSteamAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmValo.resx">
       <DependentUpon>frmValo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmValoAdmin.resx">
+      <DependentUpon>frmValoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmWild.resx">
       <DependentUpon>frmWild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWildAdmin.resx">
+      <DependentUpon>frmWildAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
