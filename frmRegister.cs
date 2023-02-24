@@ -21,15 +21,6 @@ namespace EcomGr3
             
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -41,7 +32,7 @@ namespace EcomGr3
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             firstName = txtFirstName.Text;
             lastName = txtLastName.Text;
@@ -67,12 +58,18 @@ namespace EcomGr3
             {
                 throw ex;
             }
+
+            txtFirstName.Text = String.Empty; 
+            txtLastName.Text = String.Empty;
+            txtEmail.Text = String.Empty;
+            txtPassword.Text = String.Empty;
+            txtMobileNumber.Text = String.Empty;
+
+            this.Hide();
+            frmDashboard dashboard = new frmDashboard();
+            dashboard.Show();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -84,7 +81,7 @@ namespace EcomGr3
             Application.Exit();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void lblBackToLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
             frmLogin login = new frmLogin();
@@ -108,25 +105,11 @@ namespace EcomGr3
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkbxShowPas_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtFirstName_TextChanged(object sender, EventArgs e)
         {
@@ -136,6 +119,16 @@ namespace EcomGr3
         private void txtLastName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegister_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(159)))), ((int)(((byte)(48)))));
+        }
+
+        private void btnRegister_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
         }
     }
 }

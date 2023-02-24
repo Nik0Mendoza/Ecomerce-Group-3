@@ -45,7 +45,7 @@ namespace EcomGr3
             register.Show();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
             frmDashboard dashboard = new frmDashboard();

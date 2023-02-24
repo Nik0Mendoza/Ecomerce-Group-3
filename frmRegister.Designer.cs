@@ -56,8 +56,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-
-            
             // 
             // label1
             // 
@@ -69,7 +67,6 @@
             this.label1.Size = new System.Drawing.Size(267, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Create an Account";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -124,12 +121,12 @@
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblFirstName.Location = new System.Drawing.Point(35, 102);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(97, 23);
             this.lblFirstName.TabIndex = 2;
             this.lblFirstName.Text = "First Name";
-            this.lblFirstName.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtUsername
             // 
@@ -161,12 +158,12 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblPassword.Location = new System.Drawing.Point(35, 270);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(84, 23);
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Password";
-            this.lblPassword.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtMobileNumber
             // 
@@ -182,16 +179,17 @@
             // lblMobileNumber
             // 
             this.lblMobileNumber.AutoSize = true;
+            this.lblMobileNumber.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblMobileNumber.Location = new System.Drawing.Point(35, 325);
             this.lblMobileNumber.Name = "lblMobileNumber";
             this.lblMobileNumber.Size = new System.Drawing.Size(137, 23);
             this.lblMobileNumber.TabIndex = 6;
             this.lblMobileNumber.Text = "Mobile Number";
-            this.lblMobileNumber.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(34, 407);
             this.btnRegister.Name = "btnRegister";
@@ -199,7 +197,9 @@
             this.btnRegister.TabIndex = 9;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnRegister.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnRegister_MouseDown);
+            this.btnRegister.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRegister_MouseUp);
             // 
             // label5
             // 
@@ -207,15 +207,16 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Location = new System.Drawing.Point(37, 461);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 23);
+            this.label5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label5.Size = new System.Drawing.Size(222, 23);
             this.label5.TabIndex = 11;
             this.label5.Text = "Already have an account?";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.label6.Location = new System.Drawing.Point(75, 484);
             this.label6.Name = "label6";
@@ -223,17 +224,17 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Back to LOGIN";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Click += new System.EventHandler(this.lblBackToLogin_Click);
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
+            this.lblLastName.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLastName.Location = new System.Drawing.Point(35, 159);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(94, 23);
             this.lblLastName.TabIndex = 13;
             this.lblLastName.Text = "Last Name";
-            this.lblLastName.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtFirstName
             // 
@@ -263,6 +264,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblEmail.Location = new System.Drawing.Point(35, 214);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(54, 23);
@@ -304,12 +306,12 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
@@ -319,6 +321,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
 
@@ -338,47 +341,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.TextBox txtFirstName;
-
-        //private string firstName
-        //{ get {  return this.firstName; }
-        //  set {  string firstName = txtFirstName.Text; }
-        //}
-
-
-        //string firstName = txtFirstName.Text;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
-
-        //private string password
-        //{
-        //    get { return this.password; }
-        //    set { string password = txtPassword.Text; }
-        //}
-
         private System.Windows.Forms.TextBox txtMobileNumber;
-
-        //private string mobileNumber
-        //{
-        //    get { return mobileNumber; }
-        //    set { string mobileNumber = txtMobileNumber.Text; }
-        //}
-
         private System.Windows.Forms.TextBox txtEmail;
-
-        //private string email
-        //{
-        //    get { return email; }
-        //    set { string email = txtEmail.Text; }
-        //}
-
         private System.Windows.Forms.TextBox txtLastName;
-
-        //private string lastName
-        //{
-        //    get { return lastName; }
-        //   set { string lastName = txtLastName.Text; }
-        //}
     }
 }
 
