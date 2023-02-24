@@ -46,202 +46,93 @@ namespace EcomGr3
                 // User clicked "No" or closed the message box, do nothing
             }
         }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = true;
-            panelSteam.Visible = false;
-        }
-
         private void frmAdmin_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void pictureBox8_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = true;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
-
-        }
-            private void label8_Click(object sender, EventArgs e)
-        {
-            panelCod.Visible = false;
-            panelML.Visible = true;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmCodAdmin codAd = new frmCodAdmin();
+            codAd.Show();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = true;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmMLAdmin mlAd = new frmMLAdmin();
+            mlAd.Show();
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void pictureBox10_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = true;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false; paneLol.Visible = true;
+            this.Hide();
+            frmGenshinAdmin genAd = new frmGenshinAdmin();
+            genAd.Show();
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void pictureBox13_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = true;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmWildAdmin wildAd = new frmWildAdmin();
+            wildAd.Show();
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void pictureBox11_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = true;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmLoLAdmin lolAd = new frmLoLAdmin();
+            lolAd.Show();
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void pictureBox12_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = true;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmValoAdmin valoAd = new frmValoAdmin();
+            valoAd.Show();
         }
 
-        private void label14_Click(object sender, EventArgs e)
+        private void pictureBox15_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = true;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmFreeAdmin freeAd = new frmFreeAdmin();
+            freeAd.Show();
         }
 
-        private void label15_Click(object sender, EventArgs e)
+        private void pictureBox16_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = true;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmLifeAdmin lifeAd = new frmLifeAdmin();
+            lifeAd.Show();
         }
 
-        private void label16_Click(object sender, EventArgs e)
+        private void pictureBox14_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = true;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = false;
+            this.Hide();
+            frmPubgAdmin pubgAd = new frmPubgAdmin();
+            pubgAd.Show();
         }
 
-        private void label18_Click(object sender, EventArgs e)
+        private void pictureBox17_Click(object sender, EventArgs e)
         {
-            panelCod.Visible = false;
-            panelML.Visible = false;
-            panelGenshin.Visible = false;
-            paneLol.Visible = false;
-            panelValo.Visible = false;
-            panelWild.Visible = false;
-            panelPubg.Visible = false;
-            panelFree.Visible = false;
-            panelLife.Visible = false;
-            panelOrigin.Visible = false;
-            panelIdentity.Visible = false;
-            panelSteam.Visible = true;
+            this.Hide();
+            frmMOrigAdmin morigAd = new frmMOrigAdmin();
+            morigAd.Show();
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmIdenAdmin idenAd = new frmIdenAdmin();
+            idenAd.Show();
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmSteamAdmin steamAd = new frmSteamAdmin();
+            steamAd.Show();
         }
     }
 }
