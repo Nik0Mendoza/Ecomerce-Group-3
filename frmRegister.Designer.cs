@@ -2,6 +2,11 @@
 {
     partial class frmRegister
     {
+        string firstName;
+        string lastName;
+        string email;
+        string password;
+        string mobileNumber;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -51,6 +56,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+
+            
             // 
             // label1
             // 
@@ -312,18 +319,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
+
 
         #endregion
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtMobileNumber;
         private System.Windows.Forms.Label lblMobileNumber;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label label5;
@@ -333,9 +338,47 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtEmail;
+
+        //private string firstName
+        //{ get {  return this.firstName; }
+        //  set {  string firstName = txtFirstName.Text; }
+        //}
+
+
+        //string firstName = txtFirstName.Text;
         private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+
+        //private string password
+        //{
+        //    get { return this.password; }
+        //    set { string password = txtPassword.Text; }
+        //}
+
+        private System.Windows.Forms.TextBox txtMobileNumber;
+
+        //private string mobileNumber
+        //{
+        //    get { return mobileNumber; }
+        //    set { string mobileNumber = txtMobileNumber.Text; }
+        //}
+
+        private System.Windows.Forms.TextBox txtEmail;
+
+        //private string email
+        //{
+        //    get { return email; }
+        //    set { string email = txtEmail.Text; }
+        //}
+
         private System.Windows.Forms.TextBox txtLastName;
+
+        //private string lastName
+        //{
+        //    get { return lastName; }
+        //   set { string lastName = txtLastName.Text; }
+        //}
     }
 }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,12 @@ namespace EcomGr3
 {
     public partial class frmRegister : Form
     {
+        
         public frmRegister()
         {
             InitializeComponent();
+
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,7 +43,30 @@ namespace EcomGr3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            firstName = txtFirstName.Text;
+            lastName = txtLastName.Text;
+            email = txtEmail.Text;
+            password = txtPassword.Text;
+            mobileNumber = txtMobileNumber.Text;
 
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+                SqlCommand cmd = conn.CreateCommand();
+
+                conn.Open();
+
+                cmd.CommandText = String.Format("INSERT INTO tblAccounts(firstName, lastName, email, password, mobileNumber, isAdmin) VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", firstName, lastName, email, password, mobileNumber, 0);
+                cmd.ExecuteReader();
+
+                conn.Close();
+
+                MessageBox.Show("Account created successfully!");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)

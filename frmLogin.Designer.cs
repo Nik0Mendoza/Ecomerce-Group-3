@@ -206,7 +206,7 @@
             this.lblGetStarted.AutoSize = true;
             this.lblGetStarted.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGetStarted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.lblGetStarted.Location = new System.Drawing.Point(45, 83);
+            this.lblGetStarted.Location = new System.Drawing.Point(47, 83);
             this.lblGetStarted.Name = "lblGetStarted";
             this.lblGetStarted.Size = new System.Drawing.Size(194, 34);
             this.lblGetStarted.TabIndex = 13;
