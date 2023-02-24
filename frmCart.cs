@@ -73,5 +73,19 @@ namespace EcomGr3
             frmCheckout checkout = new frmCheckout();
             checkout.Show();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmInfo info = new frmInfo();
+            info.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmInfo info = new frmInfo();
+            info.Show();
+        }
     }
 }

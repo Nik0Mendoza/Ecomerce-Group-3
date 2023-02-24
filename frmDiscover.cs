@@ -160,5 +160,19 @@ namespace EcomGr3
             frmSteam steam = new frmSteam();
             steam.Show();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmInfo info = new frmInfo();
+            info.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmInfo info = new frmInfo();
+            info.Show();
+        }
     }
 }
