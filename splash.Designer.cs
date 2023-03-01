@@ -46,19 +46,19 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(130, 37);
+            this.label7.Location = new System.Drawing.Point(109, 35);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(351, 80);
+            this.label7.Size = new System.Drawing.Size(327, 80);
             this.label7.TabIndex = 14;
-            this.label7.Text = "BAYONG";
+            this.label7.Text = "PixelPay";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(480, -110);
+            this.pictureBox1.Location = new System.Drawing.Point(381, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(409, 603);
+            this.pictureBox1.Size = new System.Drawing.Size(462, 454);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -105,7 +105,7 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(153, 105);
+            this.label5.Location = new System.Drawing.Point(122, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(253, 29);
             this.label5.TabIndex = 25;
@@ -118,11 +118,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(800, 397);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Myprogress);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "splash";

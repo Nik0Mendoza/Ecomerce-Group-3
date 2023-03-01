@@ -40,11 +40,11 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblGetStarted = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +54,7 @@
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.label6.Location = new System.Drawing.Point(73, 440);
+            this.label6.Location = new System.Drawing.Point(82, 440);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 23);
             this.label6.TabIndex = 25;
@@ -66,7 +66,7 @@
             // 
             this.lblDontHaveAnAccount.AutoSize = true;
             this.lblDontHaveAnAccount.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblDontHaveAnAccount.Location = new System.Drawing.Point(46, 417);
+            this.lblDontHaveAnAccount.Location = new System.Drawing.Point(55, 417);
             this.lblDontHaveAnAccount.Name = "lblDontHaveAnAccount";
             this.lblDontHaveAnAccount.Size = new System.Drawing.Size(194, 23);
             this.lblDontHaveAnAccount.TabIndex = 24;
@@ -174,6 +174,18 @@
             this.panel1.Size = new System.Drawing.Size(289, 54);
             this.panel1.TabIndex = 14;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(76, 10);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(181, 43);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "PixelPay";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -206,7 +218,7 @@
             this.lblGetStarted.AutoSize = true;
             this.lblGetStarted.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGetStarted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.lblGetStarted.Location = new System.Drawing.Point(47, 83);
+            this.lblGetStarted.Location = new System.Drawing.Point(29, 83);
             this.lblGetStarted.Name = "lblGetStarted";
             this.lblGetStarted.Size = new System.Drawing.Size(194, 34);
             this.lblGetStarted.TabIndex = 13;
@@ -225,18 +237,6 @@
             this.lblAdmin.TabIndex = 26;
             this.lblAdmin.Text = "Admin?";
             this.lblAdmin.Click += new System.EventHandler(this.label4_Click_1);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(76, 5);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 43);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "PixelPlay";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // frmLogin
             // 

@@ -232,9 +232,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(17, 117);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(235, 53);
+            this.label7.Size = new System.Drawing.Size(220, 53);
             this.label7.TabIndex = 16;
-            this.label7.Text = "BAYONG";
+            this.label7.Text = "PixelPay";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox1
@@ -277,11 +277,11 @@
             this.btnShopNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnShopNow.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShopNow.ForeColor = System.Drawing.Color.White;
-            this.btnShopNow.Location = new System.Drawing.Point(836, 339);
+            this.btnShopNow.Location = new System.Drawing.Point(428, 306);
             this.btnShopNow.Name = "btnShopNow";
             this.btnShopNow.Size = new System.Drawing.Size(193, 59);
             this.btnShopNow.TabIndex = 18;
-            this.btnShopNow.Text = "Show now";
+            this.btnShopNow.Text = "Shop now";
             this.btnShopNow.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnShopNow.UseVisualStyleBackColor = false;
             this.btnShopNow.Click += new System.EventHandler(this.btnShopNow_Click);
