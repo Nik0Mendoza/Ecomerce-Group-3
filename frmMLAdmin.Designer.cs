@@ -50,7 +50,7 @@
             this.pictureBox7.Location = new System.Drawing.Point(1, 0);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(83, 86);
+            this.pictureBox7.Size = new System.Drawing.Size(74, 69);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 22;
             this.pictureBox7.TabStop = false;
@@ -60,9 +60,10 @@
             // 
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(81, 91);
+            this.pictureBox9.Location = new System.Drawing.Point(72, 73);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(347, 359);
+            this.pictureBox9.Size = new System.Drawing.Size(308, 287);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 23;
             this.pictureBox9.TabStop = false;
@@ -72,9 +73,10 @@
             this.btnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnUpload.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.ForeColor = System.Drawing.Color.White;
-            this.btnUpload.Location = new System.Drawing.Point(161, 753);
+            this.btnUpload.Location = new System.Drawing.Point(143, 602);
+            this.btnUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(143, 44);
+            this.btnUpload.Size = new System.Drawing.Size(127, 35);
             this.btnUpload.TabIndex = 37;
             this.btnUpload.Text = "UPLOAD";
             this.btnUpload.UseVisualStyleBackColor = false;
@@ -83,9 +85,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 722);
+            this.label3.Location = new System.Drawing.Point(68, 578);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 28);
+            this.label3.Size = new System.Drawing.Size(133, 23);
             this.label3.TabIndex = 36;
             this.label3.Text = "Product Image:";
             // 
@@ -93,19 +95,20 @@
             // 
             this.txtQuan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtQuan.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuan.Location = new System.Drawing.Point(82, 678);
+            this.txtQuan.Location = new System.Drawing.Point(73, 542);
+            this.txtQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQuan.Multiline = true;
             this.txtQuan.Name = "txtQuan";
-            this.txtQuan.Size = new System.Drawing.Size(347, 41);
+            this.txtQuan.Size = new System.Drawing.Size(309, 34);
             this.txtQuan.TabIndex = 35;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 647);
+            this.label2.Location = new System.Drawing.Point(68, 518);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 28);
+            this.label2.Size = new System.Drawing.Size(85, 23);
             this.label2.TabIndex = 34;
             this.label2.Text = "Quantity:";
             // 
@@ -113,19 +116,20 @@
             // 
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtName.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(81, 482);
+            this.txtName.Location = new System.Drawing.Point(72, 386);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(347, 163);
+            this.txtName.Size = new System.Drawing.Size(309, 131);
             this.txtName.TabIndex = 33;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 451);
+            this.label1.Location = new System.Drawing.Point(67, 361);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 28);
+            this.label1.Size = new System.Drawing.Size(130, 23);
             this.label1.TabIndex = 32;
             this.label1.Text = "Product Name:";
             // 
@@ -134,9 +138,10 @@
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnDelete.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(1382, 808);
+            this.btnDelete.Location = new System.Drawing.Point(1228, 646);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(219, 61);
+            this.btnDelete.Size = new System.Drawing.Size(195, 49);
             this.btnDelete.TabIndex = 40;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -146,9 +151,10 @@
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnUpdate.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(977, 808);
+            this.btnUpdate.Location = new System.Drawing.Point(868, 646);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(219, 61);
+            this.btnUpdate.Size = new System.Drawing.Size(195, 49);
             this.btnUpdate.TabIndex = 39;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -158,19 +164,20 @@
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(579, 809);
+            this.btnAdd.Location = new System.Drawing.Point(515, 647);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(219, 61);
+            this.btnAdd.Size = new System.Drawing.Size(195, 49);
             this.btnAdd.TabIndex = 38;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // frmMLAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1800, 938);
+            this.ClientSize = new System.Drawing.Size(1600, 750);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
@@ -183,6 +190,8 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMLAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMLAdmin";

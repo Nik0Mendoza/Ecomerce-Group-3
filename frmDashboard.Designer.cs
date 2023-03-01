@@ -63,6 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label6);
@@ -73,7 +74,6 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -102,7 +102,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(38, 712);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 32);
+            this.label4.Size = new System.Drawing.Size(78, 28);
             this.label4.TabIndex = 0;
             this.label4.Text = "Logout";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -115,7 +115,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(38, 679);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 32);
+            this.label6.Size = new System.Drawing.Size(50, 28);
             this.label6.TabIndex = 0;
             this.label6.Text = "Info";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -140,7 +140,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(85, 418);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(148, 45);
+            this.label8.Size = new System.Drawing.Size(125, 38);
             this.label8.TabIndex = 0;
             this.label8.Text = "Account";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -153,7 +153,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(84, 361);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 45);
+            this.label3.Size = new System.Drawing.Size(72, 38);
             this.label3.TabIndex = 0;
             this.label3.Text = "Cart";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -199,7 +199,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(86, 307);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 45);
+            this.label2.Size = new System.Drawing.Size(129, 38);
             this.label2.TabIndex = 0;
             this.label2.Text = "Discover";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -210,9 +210,9 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(16, 181);
+            this.label5.Location = new System.Drawing.Point(23, 170);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(253, 29);
+            this.label5.Size = new System.Drawing.Size(210, 25);
             this.label5.TabIndex = 26;
             this.label5.Text = "Find it, love it, buy it.";
             // 
@@ -223,7 +223,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1383, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 45);
+            this.label1.Size = new System.Drawing.Size(0, 37);
             this.label1.TabIndex = 19;
             // 
             // label7
@@ -234,7 +234,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(17, 117);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(267, 64);
+            this.label7.Size = new System.Drawing.Size(220, 53);
             this.label7.TabIndex = 16;
             this.label7.Text = "PixelPay";
             this.label7.Click += new System.EventHandler(this.label7_Click);

@@ -62,7 +62,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 17.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.label1.Location = new System.Drawing.Point(12, 66);
+            this.label1.Location = new System.Drawing.Point(27, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 30);
             this.label1.TabIndex = 0;
@@ -111,11 +111,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(73, 5);
+            this.label7.Location = new System.Drawing.Point(73, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 43);
+            this.label7.Size = new System.Drawing.Size(181, 43);
             this.label7.TabIndex = 13;
-            this.label7.Text = "PixelPlay";
+            this.label7.Text = "PixelPay";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // lblFirstName
@@ -205,7 +205,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label5.Location = new System.Drawing.Point(37, 461);
+            this.label5.Location = new System.Drawing.Point(49, 461);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Size = new System.Drawing.Size(222, 23);
@@ -218,7 +218,7 @@
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.label6.Location = new System.Drawing.Point(75, 484);
+            this.label6.Location = new System.Drawing.Point(93, 484);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 23);
             this.label6.TabIndex = 12;
