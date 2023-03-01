@@ -13,22 +13,12 @@ namespace EcomGr3
 {
     public partial class frmRegister : Form
     {
-        
+        frmLogin login = new frmLogin();
+        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+
         public frmRegister()
         {
             InitializeComponent();
-
-            
-        }
-
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmRegister_Load(object sender, EventArgs e)
-        {
 
         }
 
@@ -42,7 +32,6 @@ namespace EcomGr3
 
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
                 SqlCommand cmd = conn.CreateCommand();
 
                 conn.Open();
@@ -70,13 +59,7 @@ namespace EcomGr3
             dashboard.Show();
         }
 
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
+        private void lblExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -84,13 +67,8 @@ namespace EcomGr3
         private void lblBackToLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmLogin login = new frmLogin();
+            
             login.Show();
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -98,27 +76,6 @@ namespace EcomGr3
             txtUsername.Clear();
             txtPassword.Clear();
             txtMobileNumber.Clear();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkbxShowPas_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void txtFirstName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtLastName_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRegister_MouseDown(object sender, MouseEventArgs e)

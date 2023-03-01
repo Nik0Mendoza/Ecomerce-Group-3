@@ -112,7 +112,6 @@
             this.checkbxShowPas.TabIndex = 21;
             this.checkbxShowPas.Text = "Show Password";
             this.checkbxShowPas.UseVisualStyleBackColor = true;
-            this.checkbxShowPas.CheckedChanged += new System.EventHandler(this.checkbxShowPas_CheckedChanged);
             // 
             // textConPassword
             // 
@@ -254,7 +253,6 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
