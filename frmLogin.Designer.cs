@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblCreateAccount = new System.Windows.Forms.Label();
             this.lblDontHaveAnAccount = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -44,29 +44,28 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblGetStarted = new System.Windows.Forms.Label();
-            this.lblAdmin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label6
+            // lblCreateAccount
             // 
-            this.label6.AutoSize = true;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.label6.Location = new System.Drawing.Point(82, 440);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 23);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Create Account";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.lblCreateAccount.AutoSize = true;
+            this.lblCreateAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCreateAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.lblCreateAccount.Location = new System.Drawing.Point(73, 440);
+            this.lblCreateAccount.Name = "lblCreateAccount";
+            this.lblCreateAccount.Size = new System.Drawing.Size(132, 23);
+            this.lblCreateAccount.TabIndex = 25;
+            this.lblCreateAccount.Text = "Create Account";
+            this.lblCreateAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCreateAccount.Click += new System.EventHandler(this.lblCreateAccount_Click);
             // 
             // lblDontHaveAnAccount
             // 
             this.lblDontHaveAnAccount.AutoSize = true;
             this.lblDontHaveAnAccount.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblDontHaveAnAccount.Location = new System.Drawing.Point(55, 417);
+            this.lblDontHaveAnAccount.Location = new System.Drawing.Point(44, 417);
             this.lblDontHaveAnAccount.Name = "lblDontHaveAnAccount";
             this.lblDontHaveAnAccount.Size = new System.Drawing.Size(194, 23);
             this.lblDontHaveAnAccount.TabIndex = 24;
@@ -75,7 +74,8 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.White;
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnClear.Location = new System.Drawing.Point(33, 368);
             this.btnClear.Name = "btnClear";
@@ -84,6 +84,8 @@
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnClear_MouseDown);
+            this.btnClear.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnClear_MouseUp);
             // 
             // btnLogin
             // 
@@ -96,6 +98,8 @@
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnLogin_MouseDown);
+            this.btnLogin.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnLogin_MouseUp);
             // 
             // checkbxShowPas
             // 
@@ -144,8 +148,6 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.AcceptsReturn = true;
-            this.txtEmail.AcceptsTab = true;
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -177,14 +179,14 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("MS UI Gothic", 27.9F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(76, 10);
+            this.label9.Location = new System.Drawing.Point(73, 5);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 43);
+            this.label9.Size = new System.Drawing.Size(196, 47);
             this.label9.TabIndex = 27;
             this.label9.Text = "PixelPay";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -215,37 +217,24 @@
             // 
             // lblGetStarted
             // 
+            this.lblGetStarted.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblGetStarted.AutoSize = true;
             this.lblGetStarted.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGetStarted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.lblGetStarted.Location = new System.Drawing.Point(29, 83);
+            this.lblGetStarted.Location = new System.Drawing.Point(46, 90);
             this.lblGetStarted.Name = "lblGetStarted";
             this.lblGetStarted.Size = new System.Drawing.Size(194, 34);
             this.lblGetStarted.TabIndex = 13;
             this.lblGetStarted.Text = "Get Started";
-            this.lblGetStarted.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblAdmin
-            // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblAdmin.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.lblAdmin.Location = new System.Drawing.Point(193, 131);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(83, 28);
-            this.lblAdmin.TabIndex = 26;
-            this.lblAdmin.Text = "Admin?";
-            this.lblAdmin.Click += new System.EventHandler(this.label4_Click_1);
+            this.lblGetStarted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(289, 489);
-            this.Controls.Add(this.lblAdmin);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblCreateAccount);
             this.Controls.Add(this.lblDontHaveAnAccount);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnLogin);
@@ -276,7 +265,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblCreateAccount;
         private System.Windows.Forms.Label lblDontHaveAnAccount;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnLogin;
@@ -289,7 +278,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblGetStarted;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblAdmin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace EcomGr3
 {
     public partial class frmLogin : Form
     {
+        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+        
         public frmLogin()
         {
             InitializeComponent();
@@ -38,7 +41,7 @@ namespace EcomGr3
             Application.Exit();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void lblCreateAccount_Click(object sender, EventArgs e)
         {
             this.Hide();
             frmRegister register = new frmRegister();
@@ -47,9 +50,35 @@ namespace EcomGr3
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmDashboard dashboard = new frmDashboard();
-            dashboard.Show();
+            try 
+            {
+                SqlCommand cmd = new SqlCommand("SELECT isAdmin FROM dbo.tblAccounts WHERE email = @email AND password = @password;", conn);
+                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+                conn.Open();
+                var result = (int?)cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    if (result == 1)
+                    {
+                        this.Hide();
+                        frmAdmin dashboard = new frmAdmin();
+                        dashboard.Show();
+                    }
+                    else if (result == 0)
+                    {
+                        this.Hide();
+                        frmDashboard dashboard = new frmDashboard();
+                        dashboard.Show();
+                    }
+                        MessageBox.Show(String.Format("Success!"));
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -58,21 +87,24 @@ namespace EcomGr3
             txtPassword.Clear();
         }
 
-        private void label4_Click_1(object sender, EventArgs e)
+        private void btnLogin_MouseDown(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            frmAdminLog AdminLog = new frmAdminLog();
-            AdminLog.Show();
+            btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(159)))), ((int)(((byte)(48)))));
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void btnLogin_MouseUp(object sender, MouseEventArgs e)
         {
-
+            btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnClear_MouseDown(object sender, MouseEventArgs e)
         {
+            btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+        }
 
+        private void btnClear_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
         }
     }
 }
