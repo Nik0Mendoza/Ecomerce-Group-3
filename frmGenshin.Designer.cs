@@ -73,7 +73,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(-17, 81);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(601, 596);
@@ -142,22 +142,24 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(600, 302);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1104, 449);
             this.flowLayoutPanel1.TabIndex = 39;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(1463, 781);
+            this.btnAdd.Location = new System.Drawing.Point(1462, 781);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(241, 67);
+            this.btnAdd.Size = new System.Drawing.Size(241, 68);
             this.btnAdd.TabIndex = 40;
             this.btnAdd.Text = "Add to Cart";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -170,7 +172,7 @@
             this.button2.Location = new System.Drawing.Point(1210, 781);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 67);
+            this.button2.Size = new System.Drawing.Size(241, 68);
             this.button2.TabIndex = 41;
             this.button2.Text = "Buy Now";
             this.button2.UseVisualStyleBackColor = false;

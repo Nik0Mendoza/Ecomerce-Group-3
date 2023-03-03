@@ -37,7 +37,7 @@ namespace EcomGr3
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT ID, ItemLifeimage, ItemLifename, ItemLifeprice FROM tblLife", connection);
+                SqlCommand command = new SqlCommand("SELECT ID, ItemLifeimage, ItemLifename, ItemLifeprice, ItemLifestock  FROM tblLife", connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -47,6 +47,7 @@ namespace EcomGr3
                     byte[] imageData = (byte[])reader["ItemLifeimage"];
                     string itemName = reader["ItemLifename"].ToString();
                     string itemPrice = reader["ItemLifeprice"].ToString();
+                    int stock = (int)reader["ItemLifestock"];
 
                     MemoryStream ms = new MemoryStream(imageData);
                     PictureBox pb = new PictureBox();
@@ -58,27 +59,18 @@ namespace EcomGr3
                     pb.Padding = new Padding(50);
                     pb.BorderStyle = BorderStyle.FixedSingle;
 
-                    PictureBox selectedPictureBox = null;
-
                     pb.Click += (sender, e) =>
                     {
-                        PictureBox clickedPictureBox = (PictureBox)sender;
-                        if (clickedPictureBox == selectedPictureBox)
+                        foreach (var control in flowLayoutPanel1.Controls)
                         {
-                            clickedPictureBox.BorderStyle = BorderStyle.FixedSingle;
-                            selectedPictureBox = null;
-                        }
-                        else
-                        {
-                            if (selectedPictureBox != null)
+                            PictureBox otherPictureBox = control as PictureBox;
+                            if (otherPictureBox != null && otherPictureBox != pb && otherPictureBox.BorderStyle == BorderStyle.Fixed3D)
                             {
-                                selectedPictureBox.BorderStyle = BorderStyle.FixedSingle;
+                                otherPictureBox.BorderStyle = BorderStyle.FixedSingle;
                             }
-                            clickedPictureBox.BorderStyle = BorderStyle.Fixed3D;
-                            selectedPictureBox = clickedPictureBox;
                         }
+                        pb.BorderStyle = pb.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.Fixed3D : BorderStyle.FixedSingle;
                     };
-
 
                     Label lbl = new Label();
                     lbl.Text = itemName;
@@ -88,14 +80,19 @@ namespace EcomGr3
                     lbl.Height = 30;
                     lbl.Dock = DockStyle.Bottom;
 
-
                     Label lbl1 = new Label();
-                    lbl1.Text = "₱ " + itemPrice;
+                    if (stock > 0)
+                    {
+                        lbl1.Text = "₱ " + itemPrice;
+                    }
+                    else
+                    {
+                        lbl1.Text = "OUT OF STOCK";
+                    }
                     lbl1.BackColor = Color.FromArgb(226, 226, 226);
                     lbl1.TextAlign = ContentAlignment.MiddleCenter;
-                    lbl1.Width = 45;
+                    //lbl1.Width = 45;
                     lbl1.Font = new Font("Open Sans", 8, FontStyle.Regular);
-
 
                     flowLayoutPanel1.Controls.Add(pb);
                     pb.Controls.Add(lbl);
