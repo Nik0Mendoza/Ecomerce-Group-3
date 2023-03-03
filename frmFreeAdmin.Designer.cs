@@ -30,18 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFreeAdmin));
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.itemDisplay = new System.Windows.Forms.PictureBox();
+            this.lblItemsearch = new System.Windows.Forms.Label();
+            this.txtItemsearch = new System.Windows.Forms.TextBox();
+            this.lblItemStock = new System.Windows.Forms.Label();
+            this.lblItemPrice = new System.Windows.Forms.Label();
+            this.lblItemName = new System.Windows.Forms.Label();
+            this.txtItemStock = new System.Windows.Forms.TextBox();
+            this.txtItemPrice = new System.Windows.Forms.TextBox();
+            this.txtItemName = new System.Windows.Forms.TextBox();
             this.btnUpload = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtQuan = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox7
@@ -56,137 +62,199 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // pictureBox15
+            // itemDisplay
             // 
-            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(68, 73);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(308, 287);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 26;
-            this.pictureBox15.TabStop = false;
+            this.itemDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.itemDisplay.Image = ((System.Drawing.Image)(resources.GetObject("itemDisplay.Image")));
+            this.itemDisplay.Location = new System.Drawing.Point(78, 112);
+            this.itemDisplay.Name = "itemDisplay";
+            this.itemDisplay.Size = new System.Drawing.Size(251, 234);
+            this.itemDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.itemDisplay.TabIndex = 41;
+            this.itemDisplay.TabStop = false;
             // 
-            // btnDelete
+            // lblItemsearch
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.btnDelete.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(1225, 649);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(195, 49);
-            this.btnDelete.TabIndex = 49;
-            this.btnDelete.Text = "DELETE";
-            this.btnDelete.UseVisualStyleBackColor = false;
+            this.lblItemsearch.AutoSize = true;
+            this.lblItemsearch.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblItemsearch.Location = new System.Drawing.Point(398, 81);
+            this.lblItemsearch.Name = "lblItemsearch";
+            this.lblItemsearch.Size = new System.Drawing.Size(156, 28);
+            this.lblItemsearch.TabIndex = 55;
+            this.lblItemsearch.Text = "Search Item ID:";
+            // 
+            // txtItemsearch
+            // 
+            this.txtItemsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtItemsearch.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtItemsearch.Location = new System.Drawing.Point(403, 112);
+            this.txtItemsearch.Name = "txtItemsearch";
+            this.txtItemsearch.Size = new System.Drawing.Size(322, 34);
+            this.txtItemsearch.TabIndex = 54;
+            // 
+            // lblItemStock
+            // 
+            this.lblItemStock.AutoSize = true;
+            this.lblItemStock.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblItemStock.Location = new System.Drawing.Point(398, 377);
+            this.lblItemStock.Name = "lblItemStock";
+            this.lblItemStock.Size = new System.Drawing.Size(118, 28);
+            this.lblItemStock.TabIndex = 53;
+            this.lblItemStock.Text = "Item Stock:";
+            // 
+            // lblItemPrice
+            // 
+            this.lblItemPrice.AutoSize = true;
+            this.lblItemPrice.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblItemPrice.Location = new System.Drawing.Point(398, 278);
+            this.lblItemPrice.Name = "lblItemPrice";
+            this.lblItemPrice.Size = new System.Drawing.Size(113, 28);
+            this.lblItemPrice.TabIndex = 52;
+            this.lblItemPrice.Text = "Item Price:";
+            // 
+            // lblItemName
+            // 
+            this.lblItemName.AutoSize = true;
+            this.lblItemName.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblItemName.Location = new System.Drawing.Point(398, 177);
+            this.lblItemName.Name = "lblItemName";
+            this.lblItemName.Size = new System.Drawing.Size(122, 28);
+            this.lblItemName.TabIndex = 51;
+            this.lblItemName.Text = "Item Name:";
+            // 
+            // txtItemStock
+            // 
+            this.txtItemStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtItemStock.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtItemStock.Location = new System.Drawing.Point(403, 408);
+            this.txtItemStock.Name = "txtItemStock";
+            this.txtItemStock.Size = new System.Drawing.Size(322, 34);
+            this.txtItemStock.TabIndex = 50;
+            // 
+            // txtItemPrice
+            // 
+            this.txtItemPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtItemPrice.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtItemPrice.Location = new System.Drawing.Point(403, 309);
+            this.txtItemPrice.Name = "txtItemPrice";
+            this.txtItemPrice.Size = new System.Drawing.Size(322, 34);
+            this.txtItemPrice.TabIndex = 49;
+            // 
+            // txtItemName
+            // 
+            this.txtItemName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtItemName.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtItemName.Location = new System.Drawing.Point(403, 208);
+            this.txtItemName.Name = "txtItemName";
+            this.txtItemName.Size = new System.Drawing.Size(322, 34);
+            this.txtItemName.TabIndex = 48;
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.BackColor = System.Drawing.Color.White;
+            this.btnUpload.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.btnUpload.Location = new System.Drawing.Point(92, 383);
+            this.btnUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(228, 49);
+            this.btnUpload.TabIndex = 56;
+            this.btnUpload.Text = "UPLOAD";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(403, 553);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(322, 49);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "CLEAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnUpdate.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(865, 649);
+            this.btnUpdate.Location = new System.Drawing.Point(73, 553);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(195, 49);
-            this.btnUpdate.TabIndex = 48;
+            this.btnUpdate.Size = new System.Drawing.Size(322, 49);
+            this.btnUpdate.TabIndex = 59;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.btnDelete.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(403, 477);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(322, 49);
+            this.btnDelete.TabIndex = 58;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(511, 650);
+            this.btnAdd.Location = new System.Drawing.Point(73, 477);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(195, 49);
-            this.btnAdd.TabIndex = 47;
+            this.btnAdd.Size = new System.Drawing.Size(322, 49);
+            this.btnAdd.TabIndex = 57;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnUpload
+            // dataGridView1
             // 
-            this.btnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.btnUpload.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpload.ForeColor = System.Drawing.Color.White;
-            this.btnUpload.Location = new System.Drawing.Point(140, 605);
-            this.btnUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(127, 35);
-            this.btnUpload.TabIndex = 46;
-            this.btnUpload.Text = "UPLOAD";
-            this.btnUpload.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 580);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 23);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "Product Image:";
-            // 
-            // txtQuan
-            // 
-            this.txtQuan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.txtQuan.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuan.Location = new System.Drawing.Point(69, 545);
-            this.txtQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtQuan.Multiline = true;
-            this.txtQuan.Name = "txtQuan";
-            this.txtQuan.Size = new System.Drawing.Size(309, 34);
-            this.txtQuan.TabIndex = 44;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 520);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 23);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Quantity:";
-            // 
-            // txtName
-            // 
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.txtName.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(68, 388);
-            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(309, 131);
-            this.txtName.TabIndex = 42;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(63, 363);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 23);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Product Name:";
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridView1.Location = new System.Drawing.Point(775, 80);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 80;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(737, 629);
+            this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmFreeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 750);
-            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpload);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtQuan);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.lblItemsearch);
+            this.Controls.Add(this.txtItemsearch);
+            this.Controls.Add(this.lblItemStock);
+            this.Controls.Add(this.lblItemPrice);
+            this.Controls.Add(this.lblItemName);
+            this.Controls.Add(this.txtItemStock);
+            this.Controls.Add(this.txtItemPrice);
+            this.Controls.Add(this.txtItemName);
+            this.Controls.Add(this.itemDisplay);
             this.Controls.Add(this.pictureBox7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -195,7 +263,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmFreeAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,15 +273,20 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.PictureBox itemDisplay;
+        private System.Windows.Forms.Label lblItemsearch;
+        private System.Windows.Forms.TextBox txtItemsearch;
+        private System.Windows.Forms.Label lblItemStock;
+        private System.Windows.Forms.Label lblItemPrice;
+        private System.Windows.Forms.Label lblItemName;
+        private System.Windows.Forms.TextBox txtItemStock;
+        private System.Windows.Forms.TextBox txtItemPrice;
+        private System.Windows.Forms.TextBox txtItemName;
         private System.Windows.Forms.Button btnUpload;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtQuan;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
