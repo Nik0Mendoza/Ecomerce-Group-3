@@ -14,7 +14,7 @@ namespace EcomGr3
     public partial class frmRegister : Form
     {
         frmLogin login = new frmLogin();
-        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
 
         public frmRegister()
         {

@@ -33,7 +33,7 @@ namespace EcomGr3
 
         private void LoadItems()
         {
-            string connectionString = "Data Source=LAPTOP-JP2C8Q4H\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True";
+            string connectionString = "Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

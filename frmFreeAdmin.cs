@@ -31,7 +31,7 @@ namespace EcomGr3
             dataGridView1.DataSource = dt.DefaultView;
         }
 
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-JP2C8Q4H\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {

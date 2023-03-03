@@ -16,7 +16,7 @@ namespace EcomGr3
     {
         string password;
         string email;
-        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
         
         public frmLogin()
         {
@@ -32,39 +32,6 @@ namespace EcomGr3
             this.Hide();
             frmRegister register = new frmRegister();
             register.Show();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            try 
-            {
-                SqlCommand cmd = new SqlCommand("SELECT isAdmin FROM dbo.tblAccounts WHERE email = @email AND password = @password;", conn);
-                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-                cmd.Parameters.AddWithValue("@password", txtPassword.Text);
-                conn.Open();
-                var result = (int?)cmd.ExecuteScalar();
-                if (result != null)
-                {
-                    if (result == 1)
-                    {
-                        this.Hide();
-                        frmAdmin dashboard = new frmAdmin();
-                        dashboard.Show();
-                    }
-                    else if (result == 0)
-                    {
-                        this.Hide();
-                        frmDashboard dashboard = new frmDashboard();
-                        dashboard.Show();
-                    }
-                        MessageBox.Show(String.Format("Success!"));
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -104,6 +71,34 @@ namespace EcomGr3
         {
             password = txtPassword.Text;
             return password;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT isAdmin FROM tblAccounts WHERE email = @email AND password = @password;", conn);
+            cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+
+            var result = (int?)cmd.ExecuteScalar();
+            if (result != null)
+            {
+                if (result == 1)
+                {
+                    this.Hide();
+                    frmAdmin dashboard = new frmAdmin();
+                    dashboard.Show();
+                }
+                else if (result == 0)
+                {
+                    this.Hide();
+                    frmDashboard dashboard = new frmDashboard();
+                    dashboard.Show();
+                }
+                MessageBox.Show(String.Format("Success!"));
+            }
+
+            conn.Close();
         }
     }
 }

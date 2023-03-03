@@ -16,7 +16,7 @@ namespace EcomGr3
         frmLogin login = (frmLogin)Application.OpenForms["frmLogin"];
         string email;
         string password;
-        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
         public frmAcc()
         {
             InitializeComponent();

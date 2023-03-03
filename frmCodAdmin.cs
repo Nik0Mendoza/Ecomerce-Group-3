@@ -20,7 +20,7 @@ namespace EcomGr3
             LoadGrid();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-JP2C8Q4H\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
         public void LoadGrid()
         {
             SqlCommand cmd = new SqlCommand("Select * from tblCoD", con);
