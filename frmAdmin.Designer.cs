@@ -89,7 +89,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(3, 641);
+            this.pictureBox5.Location = new System.Drawing.Point(1, 690);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(33, 33);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(38, 673);
+            this.label4.Location = new System.Drawing.Point(36, 722);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 28);
             this.label4.TabIndex = 0;
@@ -115,7 +115,7 @@
             this.label6.Cursor = System.Windows.Forms.Cursors.Help;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(41, 646);
+            this.label6.Location = new System.Drawing.Point(39, 695);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 28);
             this.label6.TabIndex = 0;
@@ -124,7 +124,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 670);
+            this.pictureBox6.Location = new System.Drawing.Point(1, 719);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,11 +185,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(63, 336);
+            this.label2.Location = new System.Drawing.Point(62, 334);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 35);
+            this.label2.Size = new System.Drawing.Size(132, 38);
             this.label2.TabIndex = 0;
             this.label2.Text = "Products";
             // 

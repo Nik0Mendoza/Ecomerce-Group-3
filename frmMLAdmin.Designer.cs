@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMLAdmin));
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tblMLBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pixelPlayDataSet = new EcomGr3.PixelPlayDataSet();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtItemName = new System.Windows.Forms.TextBox();
             this.txtItemPrice = new System.Windows.Forms.TextBox();
@@ -45,19 +42,11 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnUpload = new System.Windows.Forms.Button();
-            this.tblMLTableAdapter = new EcomGr3.PixelPlayDataSetTableAdapters.tblMLTableAdapter();
             this.lblItemsearch = new System.Windows.Forms.Label();
             this.txtItemsearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLimageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblMLBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pixelPlayDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemDisplay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,19 +64,11 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.itemMLnameDataGridViewTextBoxColumn,
-            this.itemMLpriceDataGridViewTextBoxColumn,
-            this.itemMLstockDataGridViewTextBoxColumn,
-            this.itemMLimageDataGridViewImageColumn});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dataGridView1.DataSource = this.tblMLBindingSource;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView1.Location = new System.Drawing.Point(806, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(775, 80);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -96,23 +77,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(737, 629);
             this.dataGridView1.TabIndex = 31;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // tblMLBindingSource
-            // 
-            this.tblMLBindingSource.DataMember = "tblML";
-            this.tblMLBindingSource.DataSource = this.pixelPlayDataSet;
-            // 
-            // pixelPlayDataSet
-            // 
-            this.pixelPlayDataSet.DataSetName = "PixelPlayDataSet";
-            this.pixelPlayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(113, 471);
+            this.btnAdd.Location = new System.Drawing.Point(77, 472);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(322, 49);
@@ -125,7 +97,7 @@
             // 
             this.txtItemName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtItemName.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.txtItemName.Location = new System.Drawing.Point(443, 201);
+            this.txtItemName.Location = new System.Drawing.Point(407, 202);
             this.txtItemName.Name = "txtItemName";
             this.txtItemName.Size = new System.Drawing.Size(322, 34);
             this.txtItemName.TabIndex = 32;
@@ -134,7 +106,7 @@
             // 
             this.txtItemPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtItemPrice.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.txtItemPrice.Location = new System.Drawing.Point(443, 302);
+            this.txtItemPrice.Location = new System.Drawing.Point(407, 303);
             this.txtItemPrice.Name = "txtItemPrice";
             this.txtItemPrice.Size = new System.Drawing.Size(322, 34);
             this.txtItemPrice.TabIndex = 33;
@@ -143,16 +115,17 @@
             // 
             this.txtItemStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtItemStock.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.txtItemStock.Location = new System.Drawing.Point(443, 401);
+            this.txtItemStock.Location = new System.Drawing.Point(407, 402);
             this.txtItemStock.Name = "txtItemStock";
             this.txtItemStock.Size = new System.Drawing.Size(322, 34);
             this.txtItemStock.TabIndex = 34;
+            this.txtItemStock.TextChanged += new System.EventHandler(this.txtItemStock_TextChanged);
             // 
             // lblItemName
             // 
             this.lblItemName.AutoSize = true;
             this.lblItemName.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblItemName.Location = new System.Drawing.Point(438, 170);
+            this.lblItemName.Location = new System.Drawing.Point(402, 171);
             this.lblItemName.Name = "lblItemName";
             this.lblItemName.Size = new System.Drawing.Size(122, 28);
             this.lblItemName.TabIndex = 36;
@@ -163,7 +136,7 @@
             // 
             this.lblItemPrice.AutoSize = true;
             this.lblItemPrice.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblItemPrice.Location = new System.Drawing.Point(438, 271);
+            this.lblItemPrice.Location = new System.Drawing.Point(402, 272);
             this.lblItemPrice.Name = "lblItemPrice";
             this.lblItemPrice.Size = new System.Drawing.Size(113, 28);
             this.lblItemPrice.TabIndex = 37;
@@ -173,7 +146,7 @@
             // 
             this.lblItemStock.AutoSize = true;
             this.lblItemStock.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblItemStock.Location = new System.Drawing.Point(438, 370);
+            this.lblItemStock.Location = new System.Drawing.Point(402, 371);
             this.lblItemStock.Name = "lblItemStock";
             this.lblItemStock.Size = new System.Drawing.Size(118, 28);
             this.lblItemStock.TabIndex = 38;
@@ -183,7 +156,7 @@
             // 
             this.itemDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.itemDisplay.Image = ((System.Drawing.Image)(resources.GetObject("itemDisplay.Image")));
-            this.itemDisplay.Location = new System.Drawing.Point(113, 105);
+            this.itemDisplay.Location = new System.Drawing.Point(77, 106);
             this.itemDisplay.Name = "itemDisplay";
             this.itemDisplay.Size = new System.Drawing.Size(251, 234);
             this.itemDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -196,7 +169,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnDelete.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(443, 471);
+            this.btnDelete.Location = new System.Drawing.Point(407, 472);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(322, 49);
@@ -210,7 +183,7 @@
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnUpdate.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(113, 547);
+            this.btnUpdate.Location = new System.Drawing.Point(77, 548);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(322, 49);
@@ -224,7 +197,7 @@
             this.btnUpload.BackColor = System.Drawing.Color.White;
             this.btnUpload.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.btnUpload.Location = new System.Drawing.Point(127, 376);
+            this.btnUpload.Location = new System.Drawing.Point(91, 377);
             this.btnUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(228, 49);
@@ -233,15 +206,11 @@
             this.btnUpload.UseVisualStyleBackColor = false;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
-            // tblMLTableAdapter
-            // 
-            this.tblMLTableAdapter.ClearBeforeFill = true;
-            // 
             // lblItemsearch
             // 
             this.lblItemsearch.AutoSize = true;
             this.lblItemsearch.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblItemsearch.Location = new System.Drawing.Point(438, 74);
+            this.lblItemsearch.Location = new System.Drawing.Point(402, 75);
             this.lblItemsearch.Name = "lblItemsearch";
             this.lblItemsearch.Size = new System.Drawing.Size(156, 28);
             this.lblItemsearch.TabIndex = 47;
@@ -252,7 +221,7 @@
             // 
             this.txtItemsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtItemsearch.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.txtItemsearch.Location = new System.Drawing.Point(443, 105);
+            this.txtItemsearch.Location = new System.Drawing.Point(407, 106);
             this.txtItemsearch.Name = "txtItemsearch";
             this.txtItemsearch.Size = new System.Drawing.Size(322, 34);
             this.txtItemsearch.TabIndex = 46;
@@ -263,7 +232,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(443, 547);
+            this.button1.Location = new System.Drawing.Point(407, 548);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(322, 49);
@@ -271,46 +240,6 @@
             this.button1.Text = "CLEAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "Item ID";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLnameDataGridViewTextBoxColumn
-            // 
-            this.itemMLnameDataGridViewTextBoxColumn.DataPropertyName = "itemMLname";
-            this.itemMLnameDataGridViewTextBoxColumn.HeaderText = "Item Name";
-            this.itemMLnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemMLnameDataGridViewTextBoxColumn.Name = "itemMLnameDataGridViewTextBoxColumn";
-            this.itemMLnameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLpriceDataGridViewTextBoxColumn
-            // 
-            this.itemMLpriceDataGridViewTextBoxColumn.DataPropertyName = "itemMLprice";
-            this.itemMLpriceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.itemMLpriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemMLpriceDataGridViewTextBoxColumn.Name = "itemMLpriceDataGridViewTextBoxColumn";
-            this.itemMLpriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLstockDataGridViewTextBoxColumn
-            // 
-            this.itemMLstockDataGridViewTextBoxColumn.DataPropertyName = "itemMLstock";
-            this.itemMLstockDataGridViewTextBoxColumn.HeaderText = "Stock";
-            this.itemMLstockDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemMLstockDataGridViewTextBoxColumn.Name = "itemMLstockDataGridViewTextBoxColumn";
-            this.itemMLstockDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLimageDataGridViewImageColumn
-            // 
-            this.itemMLimageDataGridViewImageColumn.DataPropertyName = "itemMLimage";
-            this.itemMLimageDataGridViewImageColumn.HeaderText = "Item Image";
-            this.itemMLimageDataGridViewImageColumn.MinimumWidth = 6;
-            this.itemMLimageDataGridViewImageColumn.Name = "itemMLimageDataGridViewImageColumn";
-            this.itemMLimageDataGridViewImageColumn.ReadOnly = true;
             // 
             // frmMLAdmin
             // 
@@ -343,8 +272,6 @@
             this.Load += new System.EventHandler(this.frmMLAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblMLBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pixelPlayDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemDisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -366,16 +293,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnUpload;
-        private PixelPlayDataSet pixelPlayDataSet;
-        private System.Windows.Forms.BindingSource tblMLBindingSource;
-        private PixelPlayDataSetTableAdapters.tblMLTableAdapter tblMLTableAdapter;
         private System.Windows.Forms.Label lblItemsearch;
         private System.Windows.Forms.TextBox txtItemsearch;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itemMLnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itemMLpriceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itemMLstockDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn itemMLimageDataGridViewImageColumn;
     }
 }

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,35 @@ namespace EcomGr3
         public frmWildAdmin()
         {
             InitializeComponent();
+            LoadGrid();
+        }
+
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-JP2C8Q4H\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
+        public void LoadGrid()
+        {
+            SqlCommand cmd = new SqlCommand("Select * from tblWild", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+            dataGridView1.DataSource = dt.DefaultView;
+        }
+        private byte[] getPhoto()
+        {
+            MemoryStream stream = new MemoryStream();
+            itemDisplay.Image.Save(stream, itemDisplay.Image.RawFormat);
+
+            return stream.GetBuffer();
+        }
+
+        public void clearData()
+        {
+            txtItemName.Clear();
+            txtItemPrice.Clear();
+            txtItemStock.Clear();
+            txtItemsearch.Clear();
+            itemDisplay.Image = null;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -27,6 +58,85 @@ namespace EcomGr3
         private void frmWildAdmin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                itemDisplay.Image = new Bitmap(openFileDialog.FileName);
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("INSERT INTO tblWild VALUES (@itemWildname, @itemWildprice, @itemWildstock, @itemWildimage)", con);
+            cmd.CommandType = CommandType.Text;
+            con.Open();
+            cmd.Parameters.AddWithValue("@itemWildname", txtItemName.Text);
+            cmd.Parameters.AddWithValue("@itemWildprice", txtItemPrice.Text);
+            cmd.Parameters.AddWithValue("@itemWildstock", txtItemStock.Text);
+            cmd.Parameters.AddWithValue("@itemWildimage", getPhoto());
+            int i = cmd.ExecuteNonQuery();
+            con.Close();
+            LoadGrid();
+            if (i > 0) MessageBox.Show("Item Successfully added...");
+            clearData();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("DELETE FROM tblWild where ID = " + txtItemsearch.Text + " ", con);
+            cmd.ExecuteNonQuery();
+            int i = cmd.ExecuteNonQuery();
+            con.Close();
+            if (i > 0) MessageBox.Show("Item Successfully deleted...");
+            LoadGrid();
+            con.Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("UPDATE tblWild SET itemWildname = '" + txtItemName.Text + "', itemWildprice = '" + txtItemPrice.Text + "', itemWildstock = '" + txtItemStock.Text + "', itemWildimage = @itemWildimage WHERE id = '" + txtItemsearch.Text + "' ", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@itemWildimage", getPhoto());
+            int i = cmd.ExecuteNonQuery();
+            con.Close();
+            if (i > 0) MessageBox.Show("Item Successfully updated...");
+            LoadGrid();
+            clearData();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            clearData();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                txtItemsearch.Text = row.Cells[0].Value.ToString();
+                txtItemName.Text = row.Cells[1].Value.ToString();
+                txtItemPrice.Text = row.Cells[2].Value.ToString();
+                txtItemStock.Text = row.Cells[3].Value.ToString();
+
+                if (row.Cells[4].Value != DBNull.Value)
+                {
+                    byte[] imageBytes = (byte[])row.Cells[4].Value;
+                    MemoryStream ms = new MemoryStream(imageBytes);
+                    itemDisplay.Image = Image.FromStream(ms);
+                }
+                else
+                {
+                    itemDisplay.Image = null;
+                }
+            }
         }
     }
 }

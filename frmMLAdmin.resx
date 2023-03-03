@@ -194,19 +194,10 @@
         gg==
 </value>
   </data>
-  <metadata name="tblMLBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>186, 17</value>
-  </metadata>
-  <metadata name="pixelPlayDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="pixelPlayDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="itemDisplay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAADR0RVh0Q29tbWVudAB4cjpkOkRBRmItV29fZFlVOjI0LGo6NDc5OTE1NzE3MzYs
+        vAAADrwBlbxySQAAADR0RVh0Q29tbWVudAB4cjpkOkRBRmItV29fZFlVOjI0LGo6NDc5OTE1NzE3MzYs
         dDoyMzAzMDIxOIpn9V0AABZJSURBVHhe7d1/rGRnXcdxTItA5UeBpRJLbVkpFlJwqbAUbehCW1oK1GhB
         /IOGtBpijFGCipiIkhBTSEioEgEBjQhCNpDahh/dWklZVn4rCkZIqUAroYWuEtqG0nu32+v33Ixkuue7
         PWeGZ86cZ+b1Sj7/3Ow985xzl313Eu69DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -305,9 +296,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAL94AH/B+9cw2/VWq6qgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="tblMLTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>380, 17</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIACzFwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv

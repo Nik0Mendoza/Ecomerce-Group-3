@@ -31,7 +31,7 @@ namespace EcomGr3
             LoadGrid();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=MAYLADYEYN\\SQLEXPRESS01;Initial Catalog=PixelPlay;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-JP2C8Q4H\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
@@ -40,10 +40,8 @@ namespace EcomGr3
             Ad.Show();
         }
 
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
@@ -76,7 +74,6 @@ namespace EcomGr3
             dt.Load(sdr);
             con.Close();
             dataGridView1.DataSource = dt.DefaultView;
-
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -93,7 +90,6 @@ namespace EcomGr3
             LoadGrid();
             if (i > 0) MessageBox.Show("Item Successfully added...");
             clearData();
-
         }
         private byte[] getPhoto()
         {
@@ -110,9 +106,6 @@ namespace EcomGr3
 
         private void frmMLAdmin_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'pixelPlayDataSet.tblML' table. You can move, or remove it, as needed.
-            this.tblMLTableAdapter.Fill(this.pixelPlayDataSet.tblML);
-
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
@@ -134,7 +127,7 @@ namespace EcomGr3
             con.Close();
             if (i > 0) MessageBox.Show("Item Successfully updated...");
             LoadGrid();
-            //clearData();
+            clearData();
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -153,6 +146,7 @@ namespace EcomGr3
             txtItemPrice.Clear();
             txtItemStock.Clear();
             txtItemsearch.Clear();
+            itemDisplay.Image = null;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -173,6 +167,16 @@ namespace EcomGr3
         }
 
         private void itemDisplay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtItemStock_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tblMLBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }
