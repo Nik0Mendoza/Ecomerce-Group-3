@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMLAdmin));
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tblMLBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pixelPlayDataSet = new EcomGr3.PixelPlayDataSet();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtItemName = new System.Windows.Forms.TextBox();
             this.txtItemPrice = new System.Windows.Forms.TextBox();
@@ -79,16 +77,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(737, 629);
             this.dataGridView1.TabIndex = 31;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // tblMLBindingSource
-            // 
-            this.tblMLBindingSource.DataMember = "tblML";
-            this.tblMLBindingSource.DataSource = this.pixelPlayDataSet;
-            // 
-            // pixelPlayDataSet
-            // 
-            this.pixelPlayDataSet.DataSetName = "PixelPlayDataSet";
-            this.pixelPlayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // btnAdd
             // 
