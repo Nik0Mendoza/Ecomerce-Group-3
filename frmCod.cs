@@ -123,6 +123,7 @@ namespace EcomGr3
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            accountID = acc.getID();
             ID = acc.getID();
             PictureBox selectedPictureBox = null;
 
