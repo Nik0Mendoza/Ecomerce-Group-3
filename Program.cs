@@ -16,9 +16,7 @@ namespace EcomGr3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmML());
-
-
+            Application.Run(new frmAdmin());
         }
     }
 }

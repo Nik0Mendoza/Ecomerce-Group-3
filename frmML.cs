@@ -90,6 +90,7 @@ namespace EcomGr3
                     lbl.Height = 30;
                     lbl.Dock = DockStyle.Bottom;
 
+
                     Label lbl1 = new Label();
                     lbl1.Text = "₱ " + itemPrice;
                     lbl1.BackColor = Color.FromArgb(226, 226, 226);
