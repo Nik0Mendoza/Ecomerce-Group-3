@@ -54,7 +54,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(552, 882);
+            this.panel1.Size = new System.Drawing.Size(491, 662);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox7
@@ -63,7 +63,7 @@
             this.pictureBox7.Location = new System.Drawing.Point(0, 0);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(94, 75);
+            this.pictureBox7.Size = new System.Drawing.Size(84, 56);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 19;
             this.pictureBox7.TabStop = false;
@@ -72,10 +72,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 50);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(562, 611);
+            this.pictureBox1.Size = new System.Drawing.Size(500, 458);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -85,19 +85,18 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(610, 35);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(542, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1104, 186);
+            this.panel2.Size = new System.Drawing.Size(981, 140);
             this.panel2.TabIndex = 39;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(17, 24);
+            this.label2.Location = new System.Drawing.Point(15, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(361, 54);
+            this.label2.Size = new System.Drawing.Size(307, 46);
             this.label2.TabIndex = 33;
             this.label2.Text = "Enter your Riot ID";
             // 
@@ -106,10 +105,9 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(26, 104);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(23, 78);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 39);
+            this.textBox1.Size = new System.Drawing.Size(216, 34);
             this.textBox1.TabIndex = 34;
             this.textBox1.Text = "Enter User ID";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -119,19 +117,18 @@
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(610, 293);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(542, 220);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1104, 402);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(981, 302);
             this.flowLayoutPanel1.TabIndex = 42;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(601, 235);
+            this.label1.Location = new System.Drawing.Point(534, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 54);
+            this.label1.Size = new System.Drawing.Size(269, 46);
             this.label1.TabIndex = 41;
             this.label1.Text = "Select Recharge";
             // 
@@ -140,10 +137,10 @@
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(1473, 719);
+            this.btnAdd.Location = new System.Drawing.Point(1309, 539);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(241, 67);
+            this.btnAdd.Size = new System.Drawing.Size(214, 50);
             this.btnAdd.TabIndex = 44;
             this.btnAdd.Text = "Add to Cart";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -153,19 +150,19 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1220, 719);
+            this.button2.Location = new System.Drawing.Point(1084, 539);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 67);
+            this.button2.Size = new System.Drawing.Size(214, 50);
             this.button2.TabIndex = 45;
             this.button2.Text = "Buy Now";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // frmWild
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1756, 826);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1561, 620);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.flowLayoutPanel1);
