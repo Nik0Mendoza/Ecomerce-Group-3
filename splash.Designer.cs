@@ -44,11 +44,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("BoxPixies", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(109, 35);
+            this.label7.Location = new System.Drawing.Point(129, 44);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(327, 80);
+            this.label7.Size = new System.Drawing.Size(423, 84);
             this.label7.TabIndex = 14;
             this.label7.Text = "PixelPay";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -56,9 +56,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(381, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(429, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(462, 454);
+            this.pictureBox1.Size = new System.Drawing.Size(520, 568);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -69,11 +70,11 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 26);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 32);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(0, 55, 0, 55);
-            this.pictureBox2.Size = new System.Drawing.Size(132, 112);
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(0, 69, 0, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(148, 140);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -81,9 +82,10 @@
             // Myprogress
             // 
             this.Myprogress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.Myprogress.Location = new System.Drawing.Point(-1, 375);
+            this.Myprogress.Location = new System.Drawing.Point(-1, 469);
+            this.Myprogress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Myprogress.Name = "Myprogress";
-            this.Myprogress.Size = new System.Drawing.Size(802, 22);
+            this.Myprogress.Size = new System.Drawing.Size(902, 28);
             this.Myprogress.TabIndex = 17;
             this.Myprogress.Click += new System.EventHandler(this.progressBar1_Click);
             // 
@@ -94,9 +96,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(155, 115);
+            this.label1.Location = new System.Drawing.Point(174, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 18;
             // 
             // label5
@@ -105,18 +107,18 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(122, 104);
+            this.label5.Location = new System.Drawing.Point(137, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(253, 29);
+            this.label5.Size = new System.Drawing.Size(298, 32);
             this.label5.TabIndex = 25;
             this.label5.Text = "Find it, love it, buy it.";
             // 
             // splash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(800, 397);
+            this.ClientSize = new System.Drawing.Size(900, 496);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
@@ -125,6 +127,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "splash";

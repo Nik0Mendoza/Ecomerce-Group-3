@@ -93,7 +93,7 @@ namespace EcomGr3
                     lbl1.Text = "₱ " + itemPrice;
                     lbl1.BackColor = Color.FromArgb(226, 226, 226);
                     lbl1.TextAlign = ContentAlignment.MiddleCenter;
-                    lbl1.Width = 45;
+                    //lbl1.Width = 45;
                     lbl1.Font = new Font("Open Sans", 8, FontStyle.Regular);
 
 
@@ -104,6 +104,11 @@ namespace EcomGr3
 
                 reader.Close();
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -82,16 +82,18 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 806);
+            this.panel1.Size = new System.Drawing.Size(306, 1008);
             this.panel1.TabIndex = 18;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1, 690);
+            this.pictureBox5.Location = new System.Drawing.Point(1, 862);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox5.Size = new System.Drawing.Size(37, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
@@ -102,9 +104,9 @@
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(36, 722);
+            this.label4.Location = new System.Drawing.Point(40, 902);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 28);
+            this.label4.Size = new System.Drawing.Size(95, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "Logout";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -115,18 +117,19 @@
             this.label6.Cursor = System.Windows.Forms.Cursors.Help;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(39, 695);
+            this.label6.Location = new System.Drawing.Point(44, 869);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 28);
+            this.label6.Size = new System.Drawing.Size(61, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Info";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1, 719);
+            this.pictureBox6.Location = new System.Drawing.Point(1, 899);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(34, 40);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
@@ -138,9 +141,9 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 171);
+            this.label5.Location = new System.Drawing.Point(28, 205);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 25);
+            this.label5.Size = new System.Drawing.Size(253, 29);
             this.label5.TabIndex = 26;
             this.label5.Text = "Find it, love it, buy it.";
             // 
@@ -149,20 +152,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1383, 34);
+            this.label1.Location = new System.Drawing.Point(1556, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 37);
+            this.label1.Size = new System.Drawing.Size(0, 45);
             this.label1.TabIndex = 19;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("BoxPixies", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(25, 118);
+            this.label7.Location = new System.Drawing.Point(13, 149);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(220, 53);
+            this.label7.Size = new System.Drawing.Size(284, 56);
             this.label7.TabIndex = 16;
             this.label7.Text = "PixelPay";
             // 
@@ -172,11 +175,11 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 22);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(78, 28);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(0, 55, 0, 55);
-            this.pictureBox1.Size = new System.Drawing.Size(130, 108);
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(0, 69, 0, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(146, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
@@ -187,9 +190,9 @@
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(62, 334);
+            this.label2.Location = new System.Drawing.Point(70, 418);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 38);
+            this.label2.Size = new System.Drawing.Size(157, 45);
             this.label2.TabIndex = 0;
             this.label2.Text = "Products";
             // 
@@ -198,10 +201,10 @@
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(364, 60);
+            this.pictureBox8.Location = new System.Drawing.Point(410, 75);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox8.Size = new System.Drawing.Size(262, 234);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 19;
             this.pictureBox8.TabStop = false;
@@ -211,10 +214,10 @@
             // 
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(673, 60);
+            this.pictureBox9.Location = new System.Drawing.Point(757, 75);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox9.Size = new System.Drawing.Size(262, 234);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 20;
             this.pictureBox9.TabStop = false;
@@ -224,10 +227,10 @@
             // 
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(979, 60);
+            this.pictureBox10.Location = new System.Drawing.Point(1101, 75);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(234, 187);
+            this.pictureBox10.Size = new System.Drawing.Size(263, 234);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 21;
             this.pictureBox10.TabStop = false;
@@ -237,10 +240,10 @@
             // 
             this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(1289, 60);
+            this.pictureBox13.Location = new System.Drawing.Point(1450, 75);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox13.Size = new System.Drawing.Size(262, 234);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 24;
             this.pictureBox13.TabStop = false;
@@ -250,10 +253,10 @@
             // 
             this.pictureBox16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(1289, 274);
+            this.pictureBox16.Location = new System.Drawing.Point(1450, 342);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(229, 185);
+            this.pictureBox16.Size = new System.Drawing.Size(258, 231);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 27;
             this.pictureBox16.TabStop = false;
@@ -263,10 +266,10 @@
             // 
             this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(980, 271);
+            this.pictureBox15.Location = new System.Drawing.Point(1102, 339);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox15.Size = new System.Drawing.Size(262, 234);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 28;
             this.pictureBox15.TabStop = false;
@@ -276,10 +279,10 @@
             // 
             this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(673, 271);
+            this.pictureBox12.Location = new System.Drawing.Point(757, 339);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox12.Size = new System.Drawing.Size(262, 234);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 29;
             this.pictureBox12.TabStop = false;
@@ -289,10 +292,10 @@
             // 
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(364, 271);
+            this.pictureBox11.Location = new System.Drawing.Point(410, 339);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox11.Size = new System.Drawing.Size(262, 234);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 30;
             this.pictureBox11.TabStop = false;
@@ -302,10 +305,10 @@
             // 
             this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(364, 486);
+            this.pictureBox14.Location = new System.Drawing.Point(410, 608);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox14.Size = new System.Drawing.Size(262, 234);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 31;
             this.pictureBox14.TabStop = false;
@@ -315,10 +318,10 @@
             // 
             this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(673, 486);
+            this.pictureBox17.Location = new System.Drawing.Point(757, 608);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox17.Size = new System.Drawing.Size(262, 234);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 32;
             this.pictureBox17.TabStop = false;
@@ -328,10 +331,10 @@
             // 
             this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(980, 486);
+            this.pictureBox18.Location = new System.Drawing.Point(1102, 608);
             this.pictureBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(233, 187);
+            this.pictureBox18.Size = new System.Drawing.Size(262, 234);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox18.TabIndex = 33;
             this.pictureBox18.TabStop = false;
@@ -341,10 +344,10 @@
             // 
             this.pictureBox19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(1289, 486);
+            this.pictureBox19.Location = new System.Drawing.Point(1450, 608);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(229, 187);
+            this.pictureBox19.Size = new System.Drawing.Size(258, 234);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox19.TabIndex = 34;
             this.pictureBox19.TabStop = false;
@@ -352,10 +355,10 @@
             // 
             // frmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1600, 750);
+            this.ClientSize = new System.Drawing.Size(1800, 938);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox17);

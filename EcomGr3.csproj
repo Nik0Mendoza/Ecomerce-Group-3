@@ -214,12 +214,6 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSeller.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="frmSeller.Designer.cs">
-      <DependentUpon>frmSeller.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSteam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -347,9 +341,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSeller.resx">
-      <DependentUpon>frmSeller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSteam.resx">
       <DependentUpon>frmSteam.cs</DependentUpon>
