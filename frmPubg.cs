@@ -14,6 +14,10 @@ namespace EcomGr3
 {
     public partial class frmPubg : Form
     {
+        frmAcc acc = (frmAcc)Application.OpenForms["frmAcc"];
+        int accountID;
+        int ID;
+        string productName;
         public frmPubg()
         {
             InitializeComponent();
@@ -70,6 +74,8 @@ namespace EcomGr3
                             }
                         }
                         pb.BorderStyle = pb.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.Fixed3D : BorderStyle.FixedSingle;
+                        ID = id;
+                        productName = itemName;
                     };
 
                     Label lbl = new Label();
@@ -100,6 +106,43 @@ namespace EcomGr3
                 }
 
                 reader.Close();
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            accountID = acc.getID();
+            ID = acc.getID();
+            PictureBox selectedPictureBox = null;
+
+            foreach (var control in flowLayoutPanel1.Controls)
+            {
+                PictureBox pictureBox = control as PictureBox;
+
+                if (pictureBox != null && pictureBox.BorderStyle == BorderStyle.Fixed3D)
+                {
+                    //string itemName = pictureBox.Controls.OfType<Label>().FirstOrDefault(l => l.Name == "lblName").Text;
+
+                    string connectionString = "Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True";
+
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        SqlCommand command = new SqlCommand("INSERT INTO tblCart (accountID, productID, itemID, productName, stock) VALUES (@accountID, 9, @itemID, @productName, 1)", connection);
+                        command.Parameters.AddWithValue("@accountID", accountID);
+                        command.Parameters.AddWithValue("@itemID", ID);
+                        command.Parameters.AddWithValue("@productName", productName);
+                        connection.Open();
+
+                        command.ExecuteReader();
+
+
+                        MessageBox.Show("Added to cart successfully.");
+
+                    }
+
+                    selectedPictureBox = pictureBox;
+                    break;
+                }
             }
         }
     }

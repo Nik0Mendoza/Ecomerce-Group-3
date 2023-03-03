@@ -34,7 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRiotID = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -84,7 +84,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtRiotID);
             this.panel2.Location = new System.Drawing.Point(542, 26);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(981, 140);
@@ -100,17 +100,17 @@
             this.label2.TabIndex = 33;
             this.label2.Text = "Enter your Riot ID";
             // 
-            // textBox1
+            // txtRiotID
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(23, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 34);
-            this.textBox1.TabIndex = 34;
-            this.textBox1.Text = "Enter User ID";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtRiotID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtRiotID.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtRiotID.ForeColor = System.Drawing.Color.DimGray;
+            this.txtRiotID.Location = new System.Drawing.Point(23, 78);
+            this.txtRiotID.Name = "txtRiotID";
+            this.txtRiotID.Size = new System.Drawing.Size(216, 34);
+            this.txtRiotID.TabIndex = 34;
+            this.txtRiotID.Text = "Enter User ID";
+            this.txtRiotID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // flowLayoutPanel1
             // 
@@ -144,6 +144,7 @@
             this.btnAdd.TabIndex = 44;
             this.btnAdd.Text = "Add to Cart";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // button2
             // 
@@ -193,7 +194,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRiotID;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAdd;
