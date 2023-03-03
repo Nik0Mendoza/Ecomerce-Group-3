@@ -35,7 +35,7 @@ namespace EcomGr3
 
         private void LoadItems()
         {
-            string connectionString = "Data Source=MAYLADYEYN\\SQLEXPRESS01;Initial Catalog=PixelPlay;Integrated Security=True;";
+            string connectionString = "Data Source=LAPTOP-JP2C8Q4H\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -129,6 +129,13 @@ namespace EcomGr3
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDiscover discover = new frmDiscover();
+            discover.Show();
         }
     }
 }

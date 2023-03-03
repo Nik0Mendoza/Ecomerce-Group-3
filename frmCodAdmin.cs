@@ -20,7 +20,7 @@ namespace EcomGr3
             LoadGrid();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=MAYLADYEYN\\SQLEXPRESS01;Initial Catalog=PixelPlay;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-JP2C8Q4H\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
         public void LoadGrid()
         {
             SqlCommand cmd = new SqlCommand("Select * from tblCoD", con);
@@ -138,6 +138,11 @@ namespace EcomGr3
                     itemDisplay.Image = null;
                 }
             }
+        }
+
+        private void frmCodAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
