@@ -269,9 +269,9 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.CheckBox checkbxShowPas;
         private System.Windows.Forms.TextBox textConPassword;
-        private System.Windows.Forms.TextBox txtPassword;
+        public System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtEmail;
+        public System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblGetStarted;

@@ -1,4 +1,9 @@
-﻿namespace EcomGr3
+﻿using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+using System;
+
+namespace EcomGr3
 {
     partial class frmAcc
     {
@@ -30,190 +35,166 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAcc));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.imgInfo = new System.Windows.Forms.PictureBox();
+            this.lblLogout = new System.Windows.Forms.Label();
+            this.lblInfo = new System.Windows.Forms.Label();
+            this.imgExit = new System.Windows.Forms.PictureBox();
+            this.lblCart = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblDiscover = new System.Windows.Forms.Label();
+            this.lblCatchphrase = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblLogo = new System.Windows.Forms.Label();
+            this.imgLogo = new System.Windows.Forms.PictureBox();
+            this.imgBack = new System.Windows.Forms.PictureBox();
+            this.lblManageMyAccount = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtPass = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtMobileNumber = new System.Windows.Forms.TextBox();
+            this.lblMobileNumber = new System.Windows.Forms.Label();
+            this.txtUserID = new System.Windows.Forms.TextBox();
+            this.lblUserID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBack)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.imgInfo);
+            this.panel1.Controls.Add(this.lblLogout);
+            this.panel1.Controls.Add(this.lblInfo);
+            this.panel1.Controls.Add(this.imgExit);
+            this.panel1.Controls.Add(this.lblCart);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.lblDiscover);
+            this.panel1.Controls.Add(this.lblCatchphrase);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lblLogo);
+            this.panel1.Controls.Add(this.imgLogo);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 704);
+            this.panel1.Size = new System.Drawing.Size(277, 587);
             this.panel1.TabIndex = 18;
             // 
-            // pictureBox5
+            // imgInfo
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 602);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(33, 31);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
+            this.imgInfo.Image = ((System.Drawing.Image)(resources.GetObject("imgInfo.Image")));
+            this.imgInfo.Location = new System.Drawing.Point(17, 518);
+            this.imgInfo.Name = "imgInfo";
+            this.imgInfo.Size = new System.Drawing.Size(33, 31);
+            this.imgInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgInfo.TabIndex = 1;
+            this.imgInfo.TabStop = false;
             // 
-            // label4
+            // lblLogout
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(38, 638);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 28);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Logout";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblLogout.AutoSize = true;
+            this.lblLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblLogout.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogout.ForeColor = System.Drawing.Color.White;
+            this.lblLogout.Location = new System.Drawing.Point(55, 554);
+            this.lblLogout.Name = "lblLogout";
+            this.lblLogout.Size = new System.Drawing.Size(78, 28);
+            this.lblLogout.TabIndex = 0;
+            this.lblLogout.Text = "Logout";
+            this.lblLogout.Click += new System.EventHandler(this.lblLogout_Click);
             // 
-            // label6
+            // lblInfo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(38, 602);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 28);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Info";
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblInfo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.ForeColor = System.Drawing.Color.White;
+            this.lblInfo.Location = new System.Drawing.Point(55, 518);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(50, 28);
+            this.lblInfo.TabIndex = 0;
+            this.lblInfo.Text = "Info";
             // 
-            // pictureBox6
+            // imgExit
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 632);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
+            this.imgExit.Image = ((System.Drawing.Image)(resources.GetObject("imgExit.Image")));
+            this.imgExit.Location = new System.Drawing.Point(17, 548);
+            this.imgExit.Name = "imgExit";
+            this.imgExit.Size = new System.Drawing.Size(30, 30);
+            this.imgExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgExit.TabIndex = 1;
+            this.imgExit.TabStop = false;
             // 
-            // label8
+            // lblCart
             // 
-            this.label8.AutoSize = true;
-            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(85, 392);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 38);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Account";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(84, 338);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 38);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Cart";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(14, 388);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 44);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
+            this.lblCart.AutoSize = true;
+            this.lblCart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCart.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCart.ForeColor = System.Drawing.Color.White;
+            this.lblCart.Location = new System.Drawing.Point(105, 335);
+            this.lblCart.Name = "lblCart";
+            this.lblCart.Size = new System.Drawing.Size(72, 38);
+            this.lblCart.TabIndex = 0;
+            this.lblCart.Text = "Cart";
+            this.lblCart.Click += new System.EventHandler(this.lblCart_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(17, 284);
+            this.pictureBox2.Location = new System.Drawing.Point(38, 281);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(67, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.imgDiscover_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(15, 334);
+            this.pictureBox3.Location = new System.Drawing.Point(36, 331);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(67, 44);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox3.Click += new System.EventHandler(this.imgCart_Click);
             // 
-            // label2
+            // lblDiscover
             // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(86, 288);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 38);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Discover";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblDiscover.AutoSize = true;
+            this.lblDiscover.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblDiscover.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiscover.ForeColor = System.Drawing.Color.White;
+            this.lblDiscover.Location = new System.Drawing.Point(107, 285);
+            this.lblDiscover.Name = "lblDiscover";
+            this.lblDiscover.Size = new System.Drawing.Size(129, 38);
+            this.lblDiscover.TabIndex = 0;
+            this.lblDiscover.Text = "Discover";
+            this.lblDiscover.Click += new System.EventHandler(this.lblDiscover_Click);
             // 
-            // label5
+            // lblCatchphrase
             // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 160);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 25);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Find it, love it, buy it.";
+            this.lblCatchphrase.AutoSize = true;
+            this.lblCatchphrase.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblCatchphrase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCatchphrase.ForeColor = System.Drawing.Color.White;
+            this.lblCatchphrase.Location = new System.Drawing.Point(30, 160);
+            this.lblCatchphrase.Name = "lblCatchphrase";
+            this.lblCatchphrase.Size = new System.Drawing.Size(210, 25);
+            this.lblCatchphrase.TabIndex = 26;
+            this.lblCatchphrase.Text = "Find it, love it, buy it.";
             // 
             // label1
             // 
@@ -225,112 +206,112 @@
             this.label1.Size = new System.Drawing.Size(0, 37);
             this.label1.TabIndex = 19;
             // 
-            // label7
+            // lblLogo
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(17, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(235, 53);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "BAYONG";
+            this.lblLogo.AutoSize = true;
+            this.lblLogo.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogo.Font = new System.Drawing.Font("MS UI Gothic", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.ForeColor = System.Drawing.Color.White;
+            this.lblLogo.Location = new System.Drawing.Point(19, 110);
+            this.lblLogo.Name = "lblLogo";
+            this.lblLogo.Size = new System.Drawing.Size(235, 53);
+            this.lblLogo.TabIndex = 16;
+            this.lblLogo.Text = "BAYONG";
             // 
-            // pictureBox1
+            // imgLogo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(0, 52, 0, 52);
-            this.pictureBox1.Size = new System.Drawing.Size(130, 101);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.imgLogo.BackColor = System.Drawing.Color.Transparent;
+            this.imgLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.imgLogo.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo.Image")));
+            this.imgLogo.InitialImage = null;
+            this.imgLogo.Location = new System.Drawing.Point(71, 21);
+            this.imgLogo.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.imgLogo.Name = "imgLogo";
+            this.imgLogo.Padding = new System.Windows.Forms.Padding(0, 52, 0, 52);
+            this.imgLogo.Size = new System.Drawing.Size(130, 101);
+            this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLogo.TabIndex = 17;
+            this.imgLogo.TabStop = false;
             // 
-            // pictureBox7
+            // imgBack
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(272, 0);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(140, 64);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 19;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            this.imgBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgBack.Image = ((System.Drawing.Image)(resources.GetObject("imgBack.Image")));
+            this.imgBack.Location = new System.Drawing.Point(277, -1);
+            this.imgBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgBack.Name = "imgBack";
+            this.imgBack.Size = new System.Drawing.Size(137, 64);
+            this.imgBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgBack.TabIndex = 19;
+            this.imgBack.TabStop = false;
+            this.imgBack.Click += new System.EventHandler(this.imgBack_Click);
             // 
-            // label10
+            // lblManageMyAccount
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(311, 122);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(289, 38);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Manage My Account";
+            this.lblManageMyAccount.AutoSize = true;
+            this.lblManageMyAccount.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageMyAccount.Location = new System.Drawing.Point(418, 13);
+            this.lblManageMyAccount.Name = "lblManageMyAccount";
+            this.lblManageMyAccount.Size = new System.Drawing.Size(289, 38);
+            this.lblManageMyAccount.TabIndex = 23;
+            this.lblManageMyAccount.Text = "Manage My Account";
             // 
-            // label11
+            // lblFirstName
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(319, 178);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(227, 28);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Full Name (FN, MI, LN)";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(318, 198);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(115, 28);
+            this.lblFirstName.TabIndex = 27;
+            this.lblFirstName.Text = "First Name";
             // 
-            // txtName
+            // txtFirstName
             // 
-            this.txtName.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(324, 207);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(263, 38);
-            this.txtName.TabIndex = 28;
+            this.txtFirstName.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(323, 227);
+            this.txtFirstName.Multiline = true;
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(263, 38);
+            this.txtFirstName.TabIndex = 28;
             // 
-            // label9
+            // lblEmail
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(319, 264);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 28);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Email Address";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(318, 306);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(145, 28);
+            this.lblEmail.TabIndex = 29;
+            this.lblEmail.Text = "Email Address";
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(324, 293);
+            this.txtEmail.Location = new System.Drawing.Point(323, 335);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(263, 38);
             this.txtEmail.TabIndex = 30;
             // 
-            // label13
+            // lblPassword
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(654, 264);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 28);
-            this.label13.TabIndex = 35;
-            this.label13.Text = "Password";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(653, 306);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(100, 28);
+            this.lblPassword.TabIndex = 35;
+            this.lblPassword.Text = "Password";
             // 
-            // txtPass
+            // txtPassword
             // 
-            this.txtPass.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(659, 293);
-            this.txtPass.Multiline = true;
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(263, 38);
-            this.txtPass.TabIndex = 36;
+            this.txtPassword.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(658, 335);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(263, 38);
+            this.txtPassword.TabIndex = 36;
             // 
             // btnSave
             // 
@@ -338,7 +319,7 @@
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(324, 372);
+            this.btnSave.Location = new System.Drawing.Point(324, 438);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(282, 52);
             this.btnSave.TabIndex = 41;
@@ -346,57 +327,99 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label12
+            // lblLastName
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(654, 178);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(157, 28);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "Mobile number";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastName.Location = new System.Drawing.Point(653, 198);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(112, 28);
+            this.lblLastName.TabIndex = 42;
+            this.lblLastName.Text = "Last Name";
             // 
-            // txtMobile
+            // txtLastName
             // 
-            this.txtMobile.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile.Location = new System.Drawing.Point(660, 207);
-            this.txtMobile.Multiline = true;
-            this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(263, 38);
-            this.txtMobile.TabIndex = 43;
+            this.txtLastName.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.Location = new System.Drawing.Point(659, 227);
+            this.txtLastName.Multiline = true;
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(263, 38);
+            this.txtLastName.TabIndex = 43;
+            // 
+            // txtMobileNumber
+            // 
+            this.txtMobileNumber.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobileNumber.Location = new System.Drawing.Point(660, 129);
+            this.txtMobileNumber.Multiline = true;
+            this.txtMobileNumber.Name = "txtMobileNumber";
+            this.txtMobileNumber.Size = new System.Drawing.Size(263, 38);
+            this.txtMobileNumber.TabIndex = 47;
+            // 
+            // lblMobileNumber
+            // 
+            this.lblMobileNumber.AutoSize = true;
+            this.lblMobileNumber.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMobileNumber.Location = new System.Drawing.Point(654, 100);
+            this.lblMobileNumber.Name = "lblMobileNumber";
+            this.lblMobileNumber.Size = new System.Drawing.Size(161, 28);
+            this.lblMobileNumber.TabIndex = 46;
+            this.lblMobileNumber.Text = "Mobile Number";
+            // 
+            // txtUserID
+            // 
+            this.txtUserID.Enabled = false;
+            this.txtUserID.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserID.Location = new System.Drawing.Point(324, 129);
+            this.txtUserID.Multiline = true;
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(263, 38);
+            this.txtUserID.TabIndex = 45;
+            // 
+            // lblUserID
+            // 
+            this.lblUserID.AutoSize = true;
+            this.lblUserID.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserID.Location = new System.Drawing.Point(319, 100);
+            this.lblUserID.Name = "lblUserID";
+            this.lblUserID.Size = new System.Drawing.Size(81, 28);
+            this.lblUserID.TabIndex = 44;
+            this.lblUserID.Text = "User ID";
             // 
             // frmAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 704);
-            this.Controls.Add(this.txtMobile);
-            this.Controls.Add(this.label12);
+            this.ClientSize = new System.Drawing.Size(975, 587);
+            this.Controls.Add(this.txtMobileNumber);
+            this.Controls.Add(this.lblMobileNumber);
+            this.Controls.Add(this.txtUserID);
+            this.Controls.Add(this.lblUserID);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.lblManageMyAccount);
+            this.Controls.Add(this.imgBack);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAcc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAcc";
+            this.Load += new System.EventHandler(this.frmAcc_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,30 +428,35 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox imgInfo;
+        private System.Windows.Forms.Label lblLogout;
+        private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.PictureBox imgExit;
+        private System.Windows.Forms.Label lblCart;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDiscover;
+        private System.Windows.Forms.Label lblCatchphrase;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblLogo;
+        private System.Windows.Forms.PictureBox imgLogo;
+        private System.Windows.Forms.PictureBox imgBack;
+        private System.Windows.Forms.Label lblManageMyAccount;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtMobile;
+        private System.Windows.Forms.Label lblLastName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtMobileNumber;
+        private System.Windows.Forms.Label lblMobileNumber;
+        private System.Windows.Forms.TextBox txtUserID;
+        private System.Windows.Forms.Label lblUserID;
+
+
+
     }
 }

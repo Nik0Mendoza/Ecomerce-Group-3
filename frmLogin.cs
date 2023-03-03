@@ -14,6 +14,8 @@ namespace EcomGr3
 {
     public partial class frmLogin : Form
     {
+        string password;
+        string email;
         SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPlay;Integrated Security=True");
         
         public frmLogin()
@@ -89,6 +91,19 @@ namespace EcomGr3
         private void btnClear_MouseUp(object sender, MouseEventArgs e)
         {
             btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+        }
+
+        internal string getEmail()
+        {
+            email = txtEmail.Text;
+            
+            return email; 
+        }
+
+        internal string getPassword()
+        {
+            password = txtPassword.Text;
+            return password;
         }
     }
 }
