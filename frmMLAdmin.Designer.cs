@@ -32,6 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMLAdmin));
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemMLnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemMLpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemMLstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemMLimageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.tblMLBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pixelPlayDataSet = new EcomGr3.PixelPlayDataSet();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -49,11 +54,6 @@
             this.lblItemsearch = new System.Windows.Forms.Label();
             this.txtItemsearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemMLimageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblMLBindingSource)).BeginInit();
@@ -96,6 +96,46 @@
             this.dataGridView1.Size = new System.Drawing.Size(737, 629);
             this.dataGridView1.TabIndex = 31;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "Item ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // itemMLnameDataGridViewTextBoxColumn
+            // 
+            this.itemMLnameDataGridViewTextBoxColumn.DataPropertyName = "itemMLname";
+            this.itemMLnameDataGridViewTextBoxColumn.HeaderText = "Item Name";
+            this.itemMLnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemMLnameDataGridViewTextBoxColumn.Name = "itemMLnameDataGridViewTextBoxColumn";
+            this.itemMLnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // itemMLpriceDataGridViewTextBoxColumn
+            // 
+            this.itemMLpriceDataGridViewTextBoxColumn.DataPropertyName = "itemMLprice";
+            this.itemMLpriceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.itemMLpriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemMLpriceDataGridViewTextBoxColumn.Name = "itemMLpriceDataGridViewTextBoxColumn";
+            this.itemMLpriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // itemMLstockDataGridViewTextBoxColumn
+            // 
+            this.itemMLstockDataGridViewTextBoxColumn.DataPropertyName = "itemMLstock";
+            this.itemMLstockDataGridViewTextBoxColumn.HeaderText = "Stock";
+            this.itemMLstockDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemMLstockDataGridViewTextBoxColumn.Name = "itemMLstockDataGridViewTextBoxColumn";
+            this.itemMLstockDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // itemMLimageDataGridViewImageColumn
+            // 
+            this.itemMLimageDataGridViewImageColumn.DataPropertyName = "itemMLimage";
+            this.itemMLimageDataGridViewImageColumn.HeaderText = "Item Image";
+            this.itemMLimageDataGridViewImageColumn.MinimumWidth = 6;
+            this.itemMLimageDataGridViewImageColumn.Name = "itemMLimageDataGridViewImageColumn";
+            this.itemMLimageDataGridViewImageColumn.ReadOnly = true;
             // 
             // tblMLBindingSource
             // 
@@ -271,46 +311,6 @@
             this.button1.Text = "CLEAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "Item ID";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLnameDataGridViewTextBoxColumn
-            // 
-            this.itemMLnameDataGridViewTextBoxColumn.DataPropertyName = "itemMLname";
-            this.itemMLnameDataGridViewTextBoxColumn.HeaderText = "Item Name";
-            this.itemMLnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemMLnameDataGridViewTextBoxColumn.Name = "itemMLnameDataGridViewTextBoxColumn";
-            this.itemMLnameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLpriceDataGridViewTextBoxColumn
-            // 
-            this.itemMLpriceDataGridViewTextBoxColumn.DataPropertyName = "itemMLprice";
-            this.itemMLpriceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.itemMLpriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemMLpriceDataGridViewTextBoxColumn.Name = "itemMLpriceDataGridViewTextBoxColumn";
-            this.itemMLpriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLstockDataGridViewTextBoxColumn
-            // 
-            this.itemMLstockDataGridViewTextBoxColumn.DataPropertyName = "itemMLstock";
-            this.itemMLstockDataGridViewTextBoxColumn.HeaderText = "Stock";
-            this.itemMLstockDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemMLstockDataGridViewTextBoxColumn.Name = "itemMLstockDataGridViewTextBoxColumn";
-            this.itemMLstockDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemMLimageDataGridViewImageColumn
-            // 
-            this.itemMLimageDataGridViewImageColumn.DataPropertyName = "itemMLimage";
-            this.itemMLimageDataGridViewImageColumn.HeaderText = "Item Image";
-            this.itemMLimageDataGridViewImageColumn.MinimumWidth = 6;
-            this.itemMLimageDataGridViewImageColumn.Name = "itemMLimageDataGridViewImageColumn";
-            this.itemMLimageDataGridViewImageColumn.ReadOnly = true;
             // 
             // frmMLAdmin
             // 

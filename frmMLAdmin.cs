@@ -40,7 +40,6 @@ namespace EcomGr3
             Ad.Show();
         }
 
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -134,7 +133,7 @@ namespace EcomGr3
             con.Close();
             if (i > 0) MessageBox.Show("Item Successfully updated...");
             LoadGrid();
-            //clearData();
+            clearData();
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -153,6 +152,7 @@ namespace EcomGr3
             txtItemPrice.Clear();
             txtItemStock.Clear();
             txtItemsearch.Clear();
+            itemDisplay.Image = null;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
