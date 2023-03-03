@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace EcomGr3
 {
@@ -15,7 +17,22 @@ namespace EcomGr3
         public frmCart()
         {
             InitializeComponent();
+            LoadGrid();
         }
+
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
+
+        public void LoadGrid()
+        {
+            SqlCommand cmd = new SqlCommand("Select * from tblCart", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+            dataGridView2.DataSource = dt.DefaultView;
+        }
+
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
@@ -72,6 +89,11 @@ namespace EcomGr3
             this.Hide();
             frmCheckout checkout = new frmCheckout();
             checkout.Show();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

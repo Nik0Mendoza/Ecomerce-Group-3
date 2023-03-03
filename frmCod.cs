@@ -14,6 +14,10 @@ namespace EcomGr3
 {
     public partial class frmCod : Form
     {
+        frmAcc acc = (frmAcc)Application.OpenForms["frmAcc"];
+        int accountID;
+        int ID;
+        string productName;
         public frmCod()
         {
             InitializeComponent();
@@ -31,7 +35,7 @@ namespace EcomGr3
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT ID, ItemCoDimage, ItemCoDname, ItemCoDprice, ItemCoDstock  FROM tblCoD", connection);
+                SqlCommand command = new SqlCommand("SELECT ID, ItemCoDimage, ItemCoDname, ItemCoDprice, itemCoDstock FROM tblCod", connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -41,7 +45,7 @@ namespace EcomGr3
                     byte[] imageData = (byte[])reader["ItemCoDimage"];
                     string itemName = reader["ItemCoDname"].ToString();
                     string itemPrice = reader["ItemCoDprice"].ToString();
-                    int stock = (int)reader["ItemCoDstock"];
+                    string itemStock = reader["ItemCoDstock"].ToString();
 
                     MemoryStream ms = new MemoryStream(imageData);
                     PictureBox pb = new PictureBox();
@@ -53,17 +57,29 @@ namespace EcomGr3
                     pb.Padding = new Padding(50);
                     pb.BorderStyle = BorderStyle.FixedSingle;
 
+                    if (itemStock == "0")
+                    {
+                        pb.Enabled = false;
+                    }
+
                     pb.Click += (sender, e) =>
                     {
-                        foreach (var control in flowLayoutPanel1.Controls)
+                        if (pb.Enabled)
                         {
-                            PictureBox otherPictureBox = control as PictureBox;
-                            if (otherPictureBox != null && otherPictureBox != pb && otherPictureBox.BorderStyle == BorderStyle.Fixed3D)
+                            foreach (var control in flowLayoutPanel1.Controls)
                             {
-                                otherPictureBox.BorderStyle = BorderStyle.FixedSingle;
+                                PictureBox otherPictureBox = control as PictureBox;
+                                //deselect
+                                if (otherPictureBox != null && otherPictureBox != pb && otherPictureBox.BorderStyle == BorderStyle.Fixed3D)
+                                {
+                                    otherPictureBox.BorderStyle = BorderStyle.FixedSingle;
+                                }
                             }
+                            //select
+                            pb.BorderStyle = pb.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.Fixed3D : BorderStyle.FixedSingle;
+                            ID = id;
+                            productName = itemName;
                         }
-                        pb.BorderStyle = pb.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.Fixed3D : BorderStyle.FixedSingle;
                     };
 
                     Label lbl = new Label();
@@ -75,18 +91,21 @@ namespace EcomGr3
                     lbl.Dock = DockStyle.Bottom;
 
                     Label lbl1 = new Label();
-                    if (stock > 0)
+                    if (itemStock == "0")
                     {
-                        lbl1.Text = "₱ " + itemPrice;
+                        lbl1.Text = "OUT OF STOCK";
+                        lbl1.BackColor = Color.FromArgb(226, 226, 226);
+                        lbl1.TextAlign = ContentAlignment.MiddleCenter;
+                        lbl1.Font = new Font("Open Sans", 8, FontStyle.Regular);
                     }
                     else
                     {
-                        lbl1.Text = "OUT OF STOCK";
+                        lbl1.Text = "₱ " + itemPrice;
+                        lbl1.BackColor = Color.FromArgb(226, 226, 226);
+                        lbl1.TextAlign = ContentAlignment.MiddleCenter;
+                        lbl1.Font = new Font("Open Sans", 8, FontStyle.Regular);
+
                     }
-                    lbl1.BackColor = Color.FromArgb(226, 226, 226);
-                    lbl1.TextAlign = ContentAlignment.MiddleCenter;
-                    //lbl1.Width = 45;
-                    lbl1.Font = new Font("Open Sans", 8, FontStyle.Regular);
 
                     flowLayoutPanel1.Controls.Add(pb);
                     pb.Controls.Add(lbl);
@@ -94,6 +113,47 @@ namespace EcomGr3
                 }
 
                 reader.Close();
+            }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            ID = acc.getID();
+            PictureBox selectedPictureBox = null;
+
+            foreach (var control in flowLayoutPanel1.Controls)
+            {
+                PictureBox pictureBox = control as PictureBox;
+
+                if (pictureBox != null && pictureBox.BorderStyle == BorderStyle.Fixed3D)
+                {
+                    //string itemName = pictureBox.Controls.OfType<Label>().FirstOrDefault(l => l.Name == "lblName").Text;
+
+                    string connectionString = "Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True";
+
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        SqlCommand command = new SqlCommand("INSERT INTO tblCart (accountID, productID, itemID, productName, stock) VALUES (@accountID, 1, @itemID, @productName, 1)", connection);
+                        command.Parameters.AddWithValue("@accountID", accountID);
+                        command.Parameters.AddWithValue("@itemID", ID);
+                        command.Parameters.AddWithValue("@productName", productName);
+                        connection.Open();
+
+                        command.ExecuteReader();
+
+
+                        MessageBox.Show("Added to cart successfully.");
+
+                    }
+
+                       selectedPictureBox = pictureBox;
+                       break;
+                }
             }
         }
 

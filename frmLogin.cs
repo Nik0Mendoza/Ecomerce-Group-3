@@ -63,7 +63,6 @@ namespace EcomGr3
         internal string getEmail()
         {
             email = txtEmail.Text;
-            
             return email; 
         }
 
@@ -97,8 +96,6 @@ namespace EcomGr3
                 }
                 MessageBox.Show(String.Format("Success!"));
             }
-
-            conn.Close();
         }
     }
 }

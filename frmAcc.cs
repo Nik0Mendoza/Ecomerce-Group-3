@@ -16,6 +16,7 @@ namespace EcomGr3
         frmLogin login = (frmLogin)Application.OpenForms["frmLogin"];
         string email;
         string password;
+        int ID;
         SqlConnection conn = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
         public frmAcc()
         {
@@ -124,6 +125,12 @@ namespace EcomGr3
                     txtPassword.Text = Convert.ToString(reader["password"]);
                 }
             }
+        }
+
+        internal int getID()
+        {
+            ID = Convert.ToInt32(txtUserID.Text);
+            return ID;
         }
     }
 }
