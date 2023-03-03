@@ -95,6 +95,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(991, 489);
             this.flowLayoutPanel1.TabIndex = 24;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint_1);
             // 
             // btnAdd
             // 
@@ -108,6 +109,7 @@
             this.btnAdd.TabIndex = 35;
             this.btnAdd.Text = "Add to Cart";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // button2
             // 
@@ -121,6 +123,7 @@
             this.button2.TabIndex = 36;
             this.button2.Text = "Buy Now";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmFree
             // 

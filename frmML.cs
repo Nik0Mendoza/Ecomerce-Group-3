@@ -15,7 +15,10 @@ namespace EcomGr3
 {
     public partial class frmML : Form
     {
-
+        frmAcc acc = (frmAcc)Application.OpenForms["frmAcc"];
+        int accountID;
+        int ID;
+        string productName;
         public frmML()
         {
             InitializeComponent();
@@ -39,7 +42,7 @@ namespace EcomGr3
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT ID, ItemMLimage, ItemMLname, ItemMLprice, itemMLstock FROM tblML", connection);
+                SqlCommand command = new SqlCommand("SELECT ID, ItemMLimage, ItemMLname, ItemMLprice, itemMLstock FROM tblCod", connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -73,12 +76,16 @@ namespace EcomGr3
                             foreach (var control in flowLayoutPanel1.Controls)
                             {
                                 PictureBox otherPictureBox = control as PictureBox;
+                                //deselect
                                 if (otherPictureBox != null && otherPictureBox != pb && otherPictureBox.BorderStyle == BorderStyle.Fixed3D)
                                 {
                                     otherPictureBox.BorderStyle = BorderStyle.FixedSingle;
                                 }
                             }
+                            //select
                             pb.BorderStyle = pb.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.Fixed3D : BorderStyle.FixedSingle;
+                            ID = id;
+                            productName = itemName;
                         }
                     };
 
@@ -122,54 +129,38 @@ namespace EcomGr3
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            accountID = acc.getID();
+            ID = acc.getID();
             PictureBox selectedPictureBox = null;
 
             foreach (var control in flowLayoutPanel1.Controls)
             {
                 PictureBox pictureBox = control as PictureBox;
+
                 if (pictureBox != null && pictureBox.BorderStyle == BorderStyle.Fixed3D)
                 {
+                    //string itemName = pictureBox.Controls.OfType<Label>().FirstOrDefault(l => l.Name == "lblName").Text;
+
+                    string connectionString = "Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True";
+
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        SqlCommand command = new SqlCommand("INSERT INTO tblCart (accountID, productID, itemID, productName, stock) VALUES (@accountID, 1, @itemID, @productName, 1)", connection);
+                        command.Parameters.AddWithValue("@accountID", accountID);
+                        command.Parameters.AddWithValue("@itemID", ID);
+                        command.Parameters.AddWithValue("@productName", productName);
+                        connection.Open();
+
+                        command.ExecuteReader();
+
+
+                        MessageBox.Show("Added to cart successfully.");
+
+                    }
+
                     selectedPictureBox = pictureBox;
                     break;
                 }
-            }
-
-            if (selectedPictureBox != null)
-            {
-                selectedPictureBox.BorderStyle = BorderStyle.FixedSingle;
-                MessageBox.Show("Added to cart successfully.");
-
-            }
-            else
-            {
-                MessageBox.Show("Please select an item to add to cart.");
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            PictureBox selectedPictureBox = null;
-
-            foreach (var control in flowLayoutPanel1.Controls)
-            {
-                PictureBox pictureBox = control as PictureBox;
-                if (pictureBox != null && pictureBox.BorderStyle == BorderStyle.Fixed3D)
-                {
-                    selectedPictureBox = pictureBox;
-                    break;
-                }
-            }
-
-            if (selectedPictureBox != null)
-            {
-                selectedPictureBox.BorderStyle = BorderStyle.FixedSingle;
-                MessageBox.Show("Item Buy successfully.");
-                //insert payment function
-
-            }
-            else
-            {
-                MessageBox.Show("Please select an item to add to cart.");
             }
         }
 
