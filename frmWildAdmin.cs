@@ -23,5 +23,10 @@ namespace EcomGr3
             frmAdmin Ad = new frmAdmin();
             Ad.Show();
         }
+
+        private void frmWildAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
