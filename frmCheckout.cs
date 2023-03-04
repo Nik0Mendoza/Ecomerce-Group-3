@@ -14,9 +14,11 @@ namespace EcomGr3
 {
     public partial class frmCheckout : Form
     {
+        frmCart cart = (frmCart)Application.OpenForms["frmCart"];
         public frmCheckout()
         {
             InitializeComponent();
+            txtTotal.Text = Convert.ToString(cart.getTotal());
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)

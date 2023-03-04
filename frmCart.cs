@@ -16,6 +16,7 @@ namespace EcomGr3
     {
         frmAcc acc = (frmAcc)Application.OpenForms["frmAcc"];
         int accountID;
+        float total;
         public frmCart()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace EcomGr3
                 }
             }
                 txtTotal.Text = a.ToString();
+            total = float.Parse(txtTotal.Text);
         }
 
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");
@@ -106,6 +108,11 @@ namespace EcomGr3
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        public float getTotal()
+        {
+            return total;
         }
     }
 }

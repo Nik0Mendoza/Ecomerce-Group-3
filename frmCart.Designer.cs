@@ -47,13 +47,9 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnCheckout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtSubT = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnApply = new System.Windows.Forms.Button();
-            this.txtVouch = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -236,7 +232,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(12, 110);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(241, 48);
+            this.label7.Size = new System.Drawing.Size(237, 47);
             this.label7.TabIndex = 16;
             this.label7.Text = "PixelPay";
             // 
@@ -273,7 +269,7 @@
             this.btnCheckout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCheckout.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckout.ForeColor = System.Drawing.Color.White;
-            this.btnCheckout.Location = new System.Drawing.Point(18, 178);
+            this.btnCheckout.Location = new System.Drawing.Point(16, 113);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(353, 44);
             this.btnCheckout.TabIndex = 19;
@@ -284,47 +280,21 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.txtSubT);
-            this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.txtTotal);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.btnApply);
-            this.panel2.Controls.Add(this.txtVouch);
             this.panel2.Controls.Add(this.btnCheckout);
             this.panel2.Location = new System.Drawing.Point(1164, 201);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(390, 233);
+            this.panel2.Size = new System.Drawing.Size(390, 176);
             this.panel2.TabIndex = 20;
-            // 
-            // txtSubT
-            // 
-            this.txtSubT.BackColor = System.Drawing.Color.White;
-            this.txtSubT.Enabled = false;
-            this.txtSubT.Location = new System.Drawing.Point(142, 54);
-            this.txtSubT.Multiline = true;
-            this.txtSubT.Name = "txtSubT";
-            this.txtSubT.ReadOnly = true;
-            this.txtSubT.Size = new System.Drawing.Size(224, 28);
-            this.txtSubT.TabIndex = 29;
-            this.txtSubT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(26, 52);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 31);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "Subtotal";
             // 
             // txtTotal
             // 
             this.txtTotal.BackColor = System.Drawing.Color.White;
             this.txtTotal.Enabled = false;
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(142, 134);
+            this.txtTotal.Location = new System.Drawing.Point(140, 69);
             this.txtTotal.Multiline = true;
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
@@ -336,7 +306,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(26, 135);
+            this.label10.Location = new System.Drawing.Point(24, 70);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(63, 31);
             this.label10.TabIndex = 23;
@@ -346,34 +316,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(22, 11);
+            this.label9.Location = new System.Drawing.Point(23, 17);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(227, 38);
             this.label9.TabIndex = 22;
             this.label9.Text = "Order Summary";
-            // 
-            // btnApply
-            // 
-            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
-            this.btnApply.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApply.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApply.ForeColor = System.Drawing.Color.White;
-            this.btnApply.Location = new System.Drawing.Point(260, 89);
-            this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(111, 38);
-            this.btnApply.TabIndex = 21;
-            this.btnApply.Text = "Apply";
-            this.btnApply.UseVisualStyleBackColor = false;
-            // 
-            // txtVouch
-            // 
-            this.txtVouch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.txtVouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVouch.Location = new System.Drawing.Point(24, 96);
-            this.txtVouch.Multiline = true;
-            this.txtVouch.Name = "txtVouch";
-            this.txtVouch.Size = new System.Drawing.Size(231, 28);
-            this.txtVouch.TabIndex = 20;
             // 
             // dataGridView2
             // 
@@ -453,12 +400,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnApply;
-        private System.Windows.Forms.TextBox txtVouch;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtSubT;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtTotal;
     }
 }

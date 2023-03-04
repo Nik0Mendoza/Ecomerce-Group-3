@@ -45,7 +45,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnShopNow = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -56,7 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -232,7 +230,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(12, 110);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(241, 48);
+            this.label7.Size = new System.Drawing.Size(237, 47);
             this.label7.TabIndex = 16;
             this.label7.Text = "PixelPay";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -261,16 +259,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(1073, 42);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(483, 586);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
             // 
             // btnShopNow
             // 
@@ -301,10 +289,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1600, 704);
+            this.ClientSize = new System.Drawing.Size(1152, 704);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.btnShopNow);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -322,7 +309,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
@@ -346,7 +332,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button btnShopNow;
         private System.Windows.Forms.PictureBox pictureBox9;
     }
