@@ -18,7 +18,7 @@ namespace EcomGr3
         int accountID;
         int ID;
         string productName;
-
+        float price;
         public frmLol()
         {
             InitializeComponent();
@@ -86,6 +86,7 @@ namespace EcomGr3
                             pb.BorderStyle = pb.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.Fixed3D : BorderStyle.FixedSingle;
                             ID = id;
                             productName = itemName;
+                            price = float.Parse(itemPrice);
                         }
                     };
 
@@ -141,10 +142,12 @@ namespace EcomGr3
 
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
-                        SqlCommand command = new SqlCommand("INSERT INTO tblCart (accountID, productID, itemID, productName, stock) VALUES (@accountID, 1, @itemID, @productName, 1)", connection);
+                        SqlCommand command = new SqlCommand("INSERT INTO tblCart (accountID, productID, itemID, productName, stock, gameID, price) VALUES (@accountID, 6, @itemID, @productName, 1, @gameID, @price)", connection);
                         command.Parameters.AddWithValue("@accountID", accountID);
                         command.Parameters.AddWithValue("@itemID", ID);
                         command.Parameters.AddWithValue("@productName", productName);
+                        command.Parameters.AddWithValue("@gameID", txtUserID.Text + txtZoneID.Text);
+                        command.Parameters.AddWithValue("@price", price);
                         connection.Open();
 
                         command.ExecuteReader();

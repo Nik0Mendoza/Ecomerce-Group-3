@@ -18,6 +18,7 @@ namespace EcomGr3
         int accountID;
         int ID;
         string productName;
+        float price;
         public frmPubg()
         {
             InitializeComponent();
@@ -76,6 +77,7 @@ namespace EcomGr3
                         pb.BorderStyle = pb.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.Fixed3D : BorderStyle.FixedSingle;
                         ID = id;
                         productName = itemName;
+                        price = float.Parse(itemPrice);
                     };
 
                     Label lbl = new Label();
@@ -127,10 +129,11 @@ namespace EcomGr3
 
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
-                        SqlCommand command = new SqlCommand("INSERT INTO tblCart (accountID, productID, itemID, productName, stock) VALUES (@accountID, 9, @itemID, @productName, 1)", connection);
+                        SqlCommand command = new SqlCommand("INSERT INTO tblCart (accountID, productID, itemID, productName, stock, price) VALUES (@accountID, 9, @itemID, @productName, 1, @price)", connection);
                         command.Parameters.AddWithValue("@accountID", accountID);
                         command.Parameters.AddWithValue("@itemID", ID);
                         command.Parameters.AddWithValue("@productName", productName);
+                        command.Parameters.AddWithValue("@price", price);
                         connection.Open();
 
                         command.ExecuteReader();

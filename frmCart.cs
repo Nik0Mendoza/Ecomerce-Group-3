@@ -20,6 +20,14 @@ namespace EcomGr3
         {
             InitializeComponent();
             LoadGrid();
+            int a = 0;
+            foreach (DataGridViewRow r in dataGridView2.Rows)
+            {
+                {
+                    a += Convert.ToInt32(r.Cells[7].Value);
+                }
+            }
+                txtTotal.Text = a.ToString();
         }
 
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-S27V0M4C\\SQLEXPRESS;Initial Catalog=PixelPay;Integrated Security=True");

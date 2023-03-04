@@ -94,7 +94,6 @@ namespace EcomGr3
                     frmDashboard dashboard = new frmDashboard();
                     dashboard.Show();
                 }
-                MessageBox.Show(String.Format("Success!"));
             }
         }
     }

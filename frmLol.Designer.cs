@@ -36,9 +36,9 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUserID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtZoneID = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -128,17 +128,17 @@
             this.button2.Text = "Buy Now";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtUserID
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(23, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 34);
-            this.textBox1.TabIndex = 34;
-            this.textBox1.Text = "Enter User ID";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUserID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtUserID.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtUserID.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUserID.Location = new System.Drawing.Point(23, 78);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(216, 34);
+            this.txtUserID.TabIndex = 34;
+            this.txtUserID.Text = "Enter User ID";
+            this.txtUserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -150,24 +150,24 @@
             this.label2.TabIndex = 33;
             this.label2.Text = "Enter User ID";
             // 
-            // textBox2
+            // txtZoneID
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(266, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 34);
-            this.textBox2.TabIndex = 35;
-            this.textBox2.Text = "(          Zone ID          )";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZoneID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtZoneID.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtZoneID.ForeColor = System.Drawing.Color.DimGray;
+            this.txtZoneID.Location = new System.Drawing.Point(266, 78);
+            this.txtZoneID.Name = "txtZoneID";
+            this.txtZoneID.Size = new System.Drawing.Size(216, 34);
+            this.txtZoneID.TabIndex = 35;
+            this.txtZoneID.Text = "(          Zone ID          )";
+            this.txtZoneID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtZoneID);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtUserID);
             this.panel2.Location = new System.Drawing.Point(538, 26);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(981, 140);
@@ -210,9 +210,9 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUserID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtZoneID;
         private System.Windows.Forms.Panel panel2;
     }
 }

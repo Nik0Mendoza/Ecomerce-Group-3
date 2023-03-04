@@ -33,9 +33,9 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtServer = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUserID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -84,25 +84,25 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtServer);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtUserID);
             this.panel2.Location = new System.Drawing.Point(533, 26);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(981, 140);
             this.panel2.TabIndex = 37;
             // 
-            // textBox2
+            // txtServer
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(266, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 34);
-            this.textBox2.TabIndex = 35;
-            this.textBox2.Text = "(           Server          )";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtServer.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtServer.ForeColor = System.Drawing.Color.DimGray;
+            this.txtServer.Location = new System.Drawing.Point(266, 78);
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Size = new System.Drawing.Size(216, 34);
+            this.txtServer.TabIndex = 35;
+            this.txtServer.Text = "(           Server          )";
+            this.txtServer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -114,17 +114,17 @@
             this.label2.TabIndex = 33;
             this.label2.Text = "Enter User ID";
             // 
-            // textBox1
+            // txtUserID
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(23, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 34);
-            this.textBox1.TabIndex = 34;
-            this.textBox1.Text = "Enter User ID";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUserID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtUserID.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.txtUserID.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUserID.Location = new System.Drawing.Point(23, 78);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(216, 34);
+            this.txtUserID.TabIndex = 34;
+            this.txtUserID.Text = "Enter User ID";
+            this.txtUserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -159,6 +159,7 @@
             this.btnAdd.TabIndex = 40;
             this.btnAdd.Text = "Add to Cart";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // button2
             // 
@@ -208,8 +209,8 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUserID;
+        private System.Windows.Forms.TextBox txtServer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnAdd;
